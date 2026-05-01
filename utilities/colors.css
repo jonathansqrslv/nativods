@@ -1,0 +1,68 @@
+/* ==========================================================================
+   COLOR UTILITIES
+   ========================================================================== */
+
+/* --- Text colors --- */
+.text-primary    { color: var(--text-primary); }
+.text-secondary  { color: var(--text-secondary); }
+.text-tertiary   { color: var(--text-tertiary); }
+.text-disabled   { color: var(--text-disabled); }
+.text-inverse    { color: var(--text-inverse); }
+.text-accent     { color: var(--interactive-default); }
+.text-success    { color: var(--feedback-success-icon); }
+.text-warning    { color: var(--feedback-warning-icon); }
+.text-error      { color: var(--feedback-error-icon); }
+.text-info       { color: var(--feedback-info-icon); }
+
+/* --- Background colors --- */
+.bg-page       { background-color: var(--bg-page); }
+.bg-surface    { background-color: var(--bg-surface); }
+.bg-surface-2  { background-color: var(--bg-surface-2); }
+.bg-surface-3  { background-color: var(--bg-surface-3); }
+.bg-accent     { background-color: var(--interactive-default); }
+.bg-success    { background-color: var(--feedback-success-bg); }
+.bg-warning    { background-color: var(--feedback-warning-bg); }
+.bg-error      { background-color: var(--feedback-error-bg); }
+.bg-info       { background-color: var(--feedback-info-bg); }
+.bg-transparent { background-color: transparent; }
+
+/* --- Border colors --- */
+.border-default { border-color: var(--border-default); }
+.border-strong  { border-color: var(--border-strong); }
+.border-focus   { border-color: var(--border-focus); }
+
+/* --- Border utility --- */
+.border         { border: 1px solid var(--border-default); }
+.border-0       { border: none; }
+.border-t       { border-top: 1px solid var(--border-default); }
+.border-b       { border-bottom: 1px solid var(--border-default); }
+.border-l       { border-left: 1px solid var(--border-default); }
+.border-r       { border-right: 1px solid var(--border-default); }
+
+/* --- Border radius --- */
+.rounded-none { border-radius: var(--radius-none); }
+.rounded-xs   { border-radius: var(--radius-xs); }
+.rounded-sm   { border-radius: var(--radius-sm); }
+.rounded      { border-radius: var(--radius-md); }
+.rounded-lg   { border-radius: var(--radius-lg); }
+.rounded-xl   { border-radius: var(--radius-xl); }
+.rounded-2xl  { border-radius: var(--radius-2xl); }
+.rounded-3xl  { border-radius: var(--radius-3xl); }
+.rounded-full { border-radius: var(--radius-full); }
+
+/* --- Opacity --- */
+.opacity-0   { opacity: 0; }
+.opacity-25  { opacity: 0.25; }
+.opacity-50  { opacity: 0.5; }
+.opacity-75  { opacity: 0.75; }
+.opacity-100 { opacity: 1; }
+
+/* --- Shadow --- */
+.shadow-none { box-shadow: var(--shadow-none); }
+.shadow-xs   { box-shadow: var(--shadow-xs); }
+.shadow-sm   { box-shadow: var(--shadow-sm); }
+.shadow      { box-shadow: var(--shadow-md); }
+.shadow-lg   { box-shadow: var(--shadow-lg); }
+.shadow-xl   { box-shadow: var(--shadow-xl); }
+.shadow-2xl  { box-shadow: var(--shadow-2xl); }
+.shadow-inner { box-shadow: var(--shadow-inner); }

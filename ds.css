@@ -1,0 +1,31 @@
+/* ==========================================================================
+   DS — Design System
+   CSS-first, framework-agnostic
+
+   Usage:
+     <link rel="stylesheet" href="ds.css">
+
+   Dark mode:
+     Automatic via prefers-color-scheme
+     Manual via data-theme="dark" | data-theme="light" on <html>
+
+   Structure:
+     tokens/     — CSS custom properties (colors, type, spacing, etc.)
+     base/       — Reset + global element defaults
+     layout/     — Container, grid, stack/flex primitives
+     components/ — UI components (button, card, modal, table, etc.)
+     utilities/  — Atomic helper classes
+
+   Cascade layers (lowest → highest specificity):
+     tokens → reset → base → layout → components → utilities
+   ========================================================================== */
+
+/* Declare layer order first — controls cascade priority */
+@layer ds-tokens, ds-reset, ds-base, ds-layout, ds-components, ds-utilities;
+
+@import "./tokens/index.css";
+@import "./tokens/themes/index.css";
+@import "./base/index.css";
+@import "./layout/index.css";
+@import "./components/index.css";
+@import "./utilities/index.css";

@@ -1,0 +1,90 @@
+/* ==========================================================================
+   DISPLAY / LAYOUT UTILITIES
+   ========================================================================== */
+
+/* --- Display --- */
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.inline       { display: inline; }
+.flex         { display: flex; }
+.inline-flex  { display: inline-flex; }
+.grid         { display: grid; }
+.inline-grid  { display: inline-grid; }
+.hidden       { display: none; }
+.contents     { display: contents; }
+
+/* --- Flex direction --- */
+.flex-row     { flex-direction: row; }
+.flex-col     { flex-direction: column; }
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-col-reverse { flex-direction: column-reverse; }
+
+/* --- Flex wrap --- */
+.flex-wrap     { flex-wrap: wrap; }
+.flex-nowrap   { flex-wrap: nowrap; }
+
+/* --- Cursor --- */
+.cursor-pointer  { cursor: pointer; }
+.cursor-default  { cursor: default; }
+.cursor-not-allowed { cursor: not-allowed; }
+.cursor-move     { cursor: move; }
+.cursor-grab     { cursor: grab; }
+.cursor-text     { cursor: text; }
+.cursor-wait     { cursor: wait; }
+
+/* --- Pointer events --- */
+.pointer-events-none { pointer-events: none; }
+.pointer-events-auto { pointer-events: auto; }
+
+/* --- User select --- */
+.select-none  { user-select: none; }
+.select-text  { user-select: text; }
+.select-all   { user-select: all; }
+.select-auto  { user-select: auto; }
+
+/* --- Visibility --- */
+.visible   { visibility: visible; }
+.invisible { visibility: hidden; }
+
+/* --- Object fit --- */
+.object-contain { object-fit: contain; }
+.object-cover   { object-fit: cover; }
+.object-fill    { object-fit: fill; }
+.object-none    { object-fit: none; }
+
+/* --- Aspect ratio --- */
+.aspect-auto     { aspect-ratio: auto; }
+.aspect-square   { aspect-ratio: 1 / 1; }
+.aspect-video    { aspect-ratio: 16 / 9; }
+.aspect-portrait { aspect-ratio: 3 / 4; }
+
+/* --- Transition --- */
+.transition       { transition: var(--transition-base); }
+.transition-fast  { transition: var(--transition-fast); }
+.transition-colors { transition: var(--transition-colors); }
+.transition-none  { transition: none; }
+
+/* --- Responsive show/hide --- */
+
+@media (max-width: 639px) {
+  .hidden-xs { display: none; }
+}
+@media (min-width: 640px) {
+  .show-xs-only { display: none; }
+}
+@media (max-width: 767px) {
+  .hidden-sm { display: none; }
+}
+@media (min-width: 768px) {
+  .show-sm-only { display: none; }
+  .sm\:flex  { display: flex; }
+  .sm\:grid  { display: grid; }
+  .sm\:block { display: block; }
+  .sm\:hidden { display: none; }
+}
+@media (min-width: 1024px) {
+  .lg\:flex   { display: flex; }
+  .lg\:grid   { display: grid; }
+  .lg\:block  { display: block; }
+  .lg\:hidden { display: none; }
+}

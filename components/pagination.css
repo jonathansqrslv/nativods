@@ -1,0 +1,110 @@
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+
+.pagination__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--text-secondary);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--transition-colors);
+  user-select: none;
+  outline: none;
+  background: none;
+  font-family: var(--font-sans);
+}
+
+.pagination__item:hover:not(:disabled):not([aria-current]) {
+  background-color: var(--bg-surface-2);
+  border-color: var(--border-default);
+  color: var(--text-primary);
+}
+
+.pagination__item:focus-visible {
+  box-shadow: var(--shadow-focus);
+  border-color: var(--border-focus);
+}
+
+.pagination__item[aria-current="page"],
+.pagination__item--active {
+  background-color: var(--interactive-default);
+  border-color: var(--interactive-default);
+  color: var(--text-on-accent);
+  font-weight: var(--weight-semibold);
+}
+
+.pagination__item:disabled,
+.pagination__item[aria-disabled="true"] {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pagination__ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  cursor: default;
+  user-select: none;
+}
+
+/* --- Outline variant --- */
+
+.pagination--outline .pagination__item {
+  border-color: var(--border-default);
+}
+
+.pagination--outline .pagination__item[aria-current="page"],
+.pagination--outline .pagination__item--active {
+  background-color: transparent;
+  border-color: var(--interactive-default);
+  color: var(--interactive-default);
+}
+
+/* --- Compact / simple variant --- */
+
+.pagination--simple {
+  gap: var(--space-2);
+}
+
+.pagination--simple .pagination__info {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  padding: 0 var(--space-2);
+}
+
+/* --- Size modifiers --- */
+
+.pagination--sm .pagination__item {
+  min-width: 1.75rem;
+  height: 1.75rem;
+  font-size: var(--text-xs);
+}
+
+.pagination--lg .pagination__item {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  font-size: var(--text-base);
+  border-radius: var(--radius-lg);
+}

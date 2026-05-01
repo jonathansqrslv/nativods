@@ -1,0 +1,72 @@
+/* ==========================================================================
+   STACK / FLEX
+   Flexbox-based layout primitives
+   ========================================================================== */
+
+/* --- Stack (vertical) --- */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-gap, var(--space-4));
+}
+
+.stack--gap-0  { --stack-gap: var(--space-0); }
+.stack--gap-1  { --stack-gap: var(--space-1); }
+.stack--gap-2  { --stack-gap: var(--space-2); }
+.stack--gap-3  { --stack-gap: var(--space-3); }
+.stack--gap-4  { --stack-gap: var(--space-4); }
+.stack--gap-6  { --stack-gap: var(--space-6); }
+.stack--gap-8  { --stack-gap: var(--space-8); }
+.stack--gap-10 { --stack-gap: var(--space-10); }
+.stack--gap-12 { --stack-gap: var(--space-12); }
+
+/* --- Inline / Row --- */
+.inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--inline-gap, var(--space-3));
+  flex-wrap: wrap;
+}
+
+.inline--gap-0  { --inline-gap: var(--space-0); }
+.inline--gap-1  { --inline-gap: var(--space-1); }
+.inline--gap-2  { --inline-gap: var(--space-2); }
+.inline--gap-3  { --inline-gap: var(--space-3); }
+.inline--gap-4  { --inline-gap: var(--space-4); }
+.inline--gap-6  { --inline-gap: var(--space-6); }
+.inline--gap-8  { --inline-gap: var(--space-8); }
+.inline--nowrap { flex-wrap: nowrap; }
+
+/* --- Alignment helpers --- */
+.items-start    { align-items: flex-start; }
+.items-center   { align-items: center; }
+.items-end      { align-items: flex-end; }
+.items-stretch  { align-items: stretch; }
+.items-baseline { align-items: baseline; }
+
+.justify-start   { justify-content: flex-start; }
+.justify-center  { justify-content: center; }
+.justify-end     { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around  { justify-content: space-around; }
+.justify-evenly  { justify-content: space-evenly; }
+
+/* --- Flex grow / shrink --- */
+.flex-1    { flex: 1 1 0%; }
+.flex-auto { flex: 1 1 auto; }
+.flex-none { flex: none; }
+.flex-grow { flex-grow: 1; }
+
+/* --- Divider inside stack --- */
+.stack > .divider,
+.inline > .divider {
+  border: none;
+  background-color: var(--border-default);
+}
+
+.stack > .divider  { height: 1px; width: 100%; }
+.inline > .divider { width: 1px; height: 1em; align-self: stretch; }
+
+/* --- Spacer --- */
+.spacer { flex: 1; }

@@ -1,0 +1,162 @@
+/* ==========================================================================
+   BASE STYLES
+   Global element defaults using design tokens
+   ========================================================================== */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+  transition: var(--transition-colors);
+}
+
+/* --- Headings --- */
+
+h1 { font-size: var(--text-4xl); font-weight: var(--weight-bold); line-height: var(--leading-tight); }
+h2 { font-size: var(--text-3xl); font-weight: var(--weight-bold); line-height: var(--leading-tight); }
+h3 { font-size: var(--text-2xl); font-weight: var(--weight-semibold); line-height: var(--leading-snug); }
+h4 { font-size: var(--text-xl);  font-weight: var(--weight-semibold); line-height: var(--leading-snug); }
+h5 { font-size: var(--text-lg);  font-weight: var(--weight-medium);   line-height: var(--leading-normal); }
+h6 { font-size: var(--text-base);font-weight: var(--weight-medium);   line-height: var(--leading-normal); }
+
+/* --- Body text --- */
+
+p { line-height: var(--leading-relaxed); }
+p + p { margin-top: var(--space-4); }
+
+/* --- Links --- */
+
+a {
+  color: var(--interactive-default);
+  text-decoration: none;
+  transition: var(--transition-colors);
+}
+
+a:hover {
+  color: var(--interactive-hover);
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+/* --- Code --- */
+
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+code {
+  background-color: var(--bg-surface-2);
+  color: var(--color-error-700);
+  padding: 0.1em 0.35em;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-default);
+}
+
+[data-theme="dark"] code {
+  color: var(--color-error-300);
+}
+
+pre {
+  background-color: var(--bg-surface-2);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-primary);
+  font-size: var(--text-sm);
+}
+
+/* --- Blockquote --- */
+
+blockquote {
+  border-left: 4px solid var(--border-strong);
+  padding-left: var(--space-4);
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* --- HR --- */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-default);
+  margin: var(--space-6) 0;
+}
+
+/* --- Lists --- */
+
+ul.list, ol.list {
+  padding-left: var(--space-6);
+}
+
+ul.list { list-style: disc; }
+ol.list { list-style: decimal; }
+
+ul.list li + li,
+ol.list li + li {
+  margin-top: var(--space-1);
+}
+
+/* --- Strong / Em --- */
+
+strong { font-weight: var(--weight-semibold); }
+em     { font-style: italic; }
+small  { font-size: var(--text-sm); }
+mark   {
+  background-color: var(--color-warning-200);
+  color: var(--color-warning-900);
+  padding: 0.1em 0.2em;
+  border-radius: var(--radius-xs);
+}
+
+/* --- Tables --- */
+
+table {
+  width: 100%;
+  font-size: var(--text-sm);
+}
+
+th, td {
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border-default);
+}
+
+th {
+  font-weight: var(--weight-semibold);
+  color: var(--text-secondary);
+  background-color: var(--bg-surface-2);
+}
+
+/* --- Focus outline global default --- */
+
+:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* --- Selection --- */
+
+::selection {
+  background-color: var(--color-accent-200);
+  color: var(--color-accent-900);
+}

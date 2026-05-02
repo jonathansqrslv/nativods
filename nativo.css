@@ -26,8 +26,7 @@
      data-accent="cerrado" — verde seco
      data-accent="ipe"     — luz amarela
      data-accent="terra"   — argila e cerâmica
-     data-accent="urucum"  — calor gráfico
-     data-accent="roxo"    — acento secundário
+      data-accent="urucum"  — calor gráfico
 
    Cascade layers (menor → maior prioridade):
      nativo-tokens → nativo-reset → nativo-base →

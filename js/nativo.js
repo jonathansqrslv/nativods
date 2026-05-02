@@ -162,4 +162,3 @@ observer.observe(document.body, { childList: true, subtree: true });
 export const Nativo = { init, toast, modal, toggleCode };
 
 window.Nativo = Nativo;
-window.DS = Nativo;

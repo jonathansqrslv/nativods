@@ -59,17 +59,15 @@ import './design-system/js/nativo.js';
 
 ## Pacotes e nomes
 
-Use `Nativo` como nome público do sistema.
+`Nativo` como nome público do sistema.
 
 ```css
-@import '@nativo/system/nativo.css';
+@import '@nativods/ds/nativo.css';
 ```
 
 ```js
-import { Nativo } from '@nativo/system/js/nativo.js';
+import { Nativo } from '@nativods/ds/js/nativo.js';
 ```
-
-`ds.css`, `js/ds.js` e `window.DS` continuam disponíveis para projetos que já dependem desses nomes. Em código novo, prefira `nativo.css`, `js/nativo.js` e `window.Nativo`.
 
 ## Estrutura
 
@@ -78,7 +76,6 @@ A estrutura separa fundamento, composição e comportamento. O CSS carrega a ide
 ```text
 design-system/
 ├── nativo.css                 entry point principal
-├── ds.css                    entry point legado
 ├── index.html                demo visual
 ├── tokens/
 │   ├── colors.css            escalas primitivas e aliases semânticos
@@ -117,7 +114,6 @@ Temas disponíveis:
 <html data-accent="ipe">      <!-- luz amarela -->
 <html data-accent="terra">    <!-- argila e cerâmica -->
 <html data-accent="urucum">   <!-- calor gráfico -->
-<html data-accent="roxo">     <!-- acento secundário -->
 ```
 
 ## Tokens

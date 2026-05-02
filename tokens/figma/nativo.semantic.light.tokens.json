@@ -1,0 +1,167 @@
+{
+  "color": {
+    "semantic": {
+      "bg": {
+        "page": {
+          "$value": "#faf9f7",
+          "$type": "color",
+          "$description": "--bg-page"
+        },
+        "surface": {
+          "2": {
+            "$value": "#f4f2ee",
+            "$type": "color",
+            "$description": "--bg-surface-2"
+          },
+          "3": {
+            "$value": "#e8e3dc",
+            "$type": "color",
+            "$description": "--bg-surface-3"
+          },
+          "$value": "#ffffff",
+          "$type": "color",
+          "$description": "--bg-surface"
+        },
+        "overlay": {
+          "$value": "rgba(30, 25, 22, 0.5)",
+          "$type": "color",
+          "$description": "--bg-overlay"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "#e8e3dc",
+          "$type": "color",
+          "$description": "--border-default"
+        },
+        "strong": {
+          "$value": "#d4ccc2",
+          "$type": "color",
+          "$description": "--border-strong"
+        },
+        "focus": {
+          "$value": "#4f991f",
+          "$type": "color",
+          "$description": "--border-focus"
+        }
+      },
+      "interactive": {
+        "default": {
+          "$value": "#28640f",
+          "$type": "color",
+          "$description": "--interactive-default"
+        },
+        "hover": {
+          "$value": "#204f10",
+          "$type": "color",
+          "$description": "--interactive-hover"
+        },
+        "active": {
+          "$value": "#1a4010",
+          "$type": "color",
+          "$description": "--interactive-active"
+        },
+        "subtle": {
+          "$value": "#edf8e8",
+          "$type": "color",
+          "$description": "--interactive-subtle",
+          "hover": {
+            "$value": "#d8efc9",
+            "$type": "color",
+            "$description": "--interactive-subtle-hover"
+          }
+        }
+      },
+      "feedback": {
+        "success": {
+          "bg": {
+            "$value": "#edf8e8",
+            "$type": "color",
+            "$description": "--feedback-success-bg"
+          },
+          "text": {
+            "$value": "#204f10",
+            "$type": "color",
+            "$description": "--feedback-success-text"
+          },
+          "border": {
+            "$value": "#b7df98",
+            "$type": "color",
+            "$description": "--feedback-success-border"
+          },
+          "icon": {
+            "$value": "#347a12",
+            "$type": "color",
+            "$description": "--feedback-success-icon"
+          }
+        },
+        "warning": {
+          "bg": {
+            "$value": "#fffbe5",
+            "$type": "color",
+            "$description": "--feedback-warning-bg"
+          },
+          "text": {
+            "$value": "#4a3400",
+            "$type": "color",
+            "$description": "--feedback-warning-text"
+          },
+          "border": {
+            "$value": "#ffe873",
+            "$type": "color",
+            "$description": "--feedback-warning-border"
+          },
+          "icon": {
+            "$value": "#a87b00",
+            "$type": "color",
+            "$description": "--feedback-warning-icon"
+          }
+        },
+        "error": {
+          "bg": {
+            "$value": "#fff3ed",
+            "$type": "color",
+            "$description": "--feedback-error-bg"
+          },
+          "text": {
+            "$value": "#7c2712",
+            "$type": "color",
+            "$description": "--feedback-error-text"
+          },
+          "border": {
+            "$value": "#ffc0a4",
+            "$type": "color",
+            "$description": "--feedback-error-border"
+          },
+          "icon": {
+            "$value": "#c83b10",
+            "$type": "color",
+            "$description": "--feedback-error-icon"
+          }
+        },
+        "info": {
+          "bg": {
+            "$value": "#eef8ff",
+            "$type": "color",
+            "$description": "--feedback-info-bg"
+          },
+          "text": {
+            "$value": "#0a467e",
+            "$type": "color",
+            "$description": "--feedback-info-text"
+          },
+          "border": {
+            "$value": "#baddff",
+            "$type": "color",
+            "$description": "--feedback-info-border"
+          },
+          "icon": {
+            "$value": "#0968bf",
+            "$type": "color",
+            "$description": "--feedback-info-icon"
+          }
+        }
+      }
+    }
+  }
+}

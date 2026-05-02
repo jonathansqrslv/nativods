@@ -1,0 +1,167 @@
+{
+  "color": {
+    "semantic": {
+      "bg": {
+        "page": {
+          "$value": "#120e0c",
+          "$type": "color",
+          "$description": "--bg-page"
+        },
+        "surface": {
+          "2": {
+            "$value": "#332d28",
+            "$type": "color",
+            "$description": "--bg-surface-2"
+          },
+          "3": {
+            "$value": "#4e4640",
+            "$type": "color",
+            "$description": "--bg-surface-3"
+          },
+          "$value": "#1e1916",
+          "$type": "color",
+          "$description": "--bg-surface"
+        },
+        "overlay": {
+          "$value": "rgba(0, 0, 0, 0.65)",
+          "$type": "color",
+          "$description": "--bg-overlay"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "#332d28",
+          "$type": "color",
+          "$description": "--border-default"
+        },
+        "strong": {
+          "$value": "#4e4640",
+          "$type": "color",
+          "$description": "--border-strong"
+        },
+        "focus": {
+          "$value": "#70b238",
+          "$type": "color",
+          "$description": "--border-focus"
+        }
+      },
+      "interactive": {
+        "default": {
+          "$value": "#70b238",
+          "$type": "color",
+          "$description": "--interactive-default"
+        },
+        "hover": {
+          "$value": "#91ca63",
+          "$type": "color",
+          "$description": "--interactive-hover"
+        },
+        "active": {
+          "$value": "#b7df98",
+          "$type": "color",
+          "$description": "--interactive-active"
+        },
+        "subtle": {
+          "$value": "rgba(79, 153, 31, 0.12)",
+          "$type": "color",
+          "$description": "--interactive-subtle",
+          "hover": {
+            "$value": "rgba(79, 153, 31, 0.2)",
+            "$type": "color",
+            "$description": "--interactive-subtle-hover"
+          }
+        }
+      },
+      "feedback": {
+        "success": {
+          "bg": {
+            "$value": "rgba(79, 153, 31, 0.1)",
+            "$type": "color",
+            "$description": "--feedback-success-bg"
+          },
+          "text": {
+            "$value": "#91ca63",
+            "$type": "color",
+            "$description": "--feedback-success-text"
+          },
+          "border": {
+            "$value": "rgba(79, 153, 31, 0.25)",
+            "$type": "color",
+            "$description": "--feedback-success-border"
+          },
+          "icon": {
+            "$value": "#70b238",
+            "$type": "color",
+            "$description": "--feedback-success-icon"
+          }
+        },
+        "warning": {
+          "bg": {
+            "$value": "rgba(217, 169, 0, 0.1)",
+            "$type": "color",
+            "$description": "--feedback-warning-bg"
+          },
+          "text": {
+            "$value": "#ffd92f",
+            "$type": "color",
+            "$description": "--feedback-warning-text"
+          },
+          "border": {
+            "$value": "rgba(217, 169, 0, 0.25)",
+            "$type": "color",
+            "$description": "--feedback-warning-border"
+          },
+          "icon": {
+            "$value": "#f7c600",
+            "$type": "color",
+            "$description": "--feedback-warning-icon"
+          }
+        },
+        "error": {
+          "bg": {
+            "$value": "rgba(236, 79, 26, 0.1)",
+            "$type": "color",
+            "$description": "--feedback-error-bg"
+          },
+          "text": {
+            "$value": "#ff9870",
+            "$type": "color",
+            "$description": "--feedback-error-text"
+          },
+          "border": {
+            "$value": "rgba(236, 79, 26, 0.25)",
+            "$type": "color",
+            "$description": "--feedback-error-border"
+          },
+          "icon": {
+            "$value": "#fb6e3b",
+            "$type": "color",
+            "$description": "--feedback-error-icon"
+          }
+        },
+        "info": {
+          "bg": {
+            "$value": "rgba(31, 132, 223, 0.1)",
+            "$type": "color",
+            "$description": "--feedback-info-bg"
+          },
+          "text": {
+            "$value": "#8bc5ff",
+            "$type": "color",
+            "$description": "--feedback-info-text"
+          },
+          "border": {
+            "$value": "rgba(31, 132, 223, 0.25)",
+            "$type": "color",
+            "$description": "--feedback-info-border"
+          },
+          "icon": {
+            "$value": "#52a6f5",
+            "$type": "color",
+            "$description": "--feedback-info-icon"
+          }
+        }
+      }
+    }
+  }
+}

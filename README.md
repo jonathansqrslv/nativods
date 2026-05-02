@@ -139,6 +139,16 @@ Principais famílias:
 - `--font-*`, `--text-*`, `--weight-*`, `--leading-*`, `--tracking-*`
 - `--space-*`, `--radius-*`, `--shadow-*`, `--duration-*`, `--ease-*`
 
+### Figma
+
+O Nativo pode gerar uma versão dos tokens em JSON DTCG para importação em Figma Variables.
+
+```bash
+npm run tokens:figma
+```
+
+Os arquivos são criados em `tokens/figma/`. Veja o fluxo recomendado em [`docs/figma.md`](docs/figma.md).
+
 ## Dark Mode
 
 nativo acompanha `prefers-color-scheme`. Quando a interface precisar decidir por conta própria, use `data-theme` no `html`.

@@ -13,6 +13,9 @@
   ],
   "main": "js/nativo.js",
   "style": "nativo.css",
+  "scripts": {
+    "tokens:figma": "node scripts/export-figma-tokens.mjs"
+  },
   "exports": {
     ".": "./js/nativo.js",
     "./nativo.css": "./nativo.css",

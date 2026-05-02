@@ -1,0 +1,41 @@
+{
+  "name": "nativods",
+  "version": "0.1.0",
+  "description": "Design system CSS-first com sensibilidade brasileira — silencioso, mas vivo.",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "design-system",
+    "css",
+    "vanilla",
+    "brasileiro",
+    "nativo"
+  ],
+  "main": "js/nativo.js",
+  "style": "nativo.css",
+  "exports": {
+    ".": "./js/nativo.js",
+    "./nativo.css": "./nativo.css",
+    "./*": "./*"
+  },
+  "files": [
+    "nativo.css",
+    "ds.css",
+    "tokens/",
+    "base/",
+    "components/",
+    "layout/",
+    "utilities/",
+    "js/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathansqrslv/nativods.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonathansqrslv/nativods/issues"
+  },
+  "homepage": "https://github.com/jonathansqrslv/nativods#readme"
+}

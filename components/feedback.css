@@ -1,2 +1,2 @@
-@import "./alert.css"   layer(brisa-components);
-@import "./spinner.css" layer(brisa-components);
+@import "./alert.css"   layer(nativo-components);
+@import "./spinner.css" layer(nativo-components);

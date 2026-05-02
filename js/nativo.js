@@ -1,5 +1,5 @@
 /**
- * Brisa — Design System Brasileiro
+ * nativo — design system
  * Camada de comportamento
  *
  * Um sistema silencioso, mas vivo.
@@ -10,13 +10,14 @@ import { initTabs }      from './tabs.js';
 import { initModals, modal } from './modal.js';
 import { initNavbar }    from './navbar.js';
 import { toast }         from './toast.js';
+import { icon }          from './icons.js';
 
-const styleId = 'brisa-runtime';
+const styleId = 'nativo-runtime';
 if (!document.getElementById(styleId)) {
   const style = document.createElement('style');
   style.id = styleId;
   style.textContent = `
-    @keyframes brisa-spin { to { transform: rotate(360deg); } }
+    @keyframes nativo-spin { to { transform: rotate(360deg); } }
   `;
   document.head.appendChild(style);
 }
@@ -43,12 +44,7 @@ const BASE = (() => {
 const NAV_HTML = `
 <nav class="navbar navbar--elevated" data-navbar>
   <a href="${BASE}index.html" class="navbar__brand">
-    <svg class="navbar__brand-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="32" height="32" fill="var(--interactive-default)"/>
-      <path d="M9 8 L9 24 M9 8 Q20 8 20 13 Q20 16 9 16 M9 16 Q22 16 22 20 Q22 24 9 24"
-            stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    </svg>
-    Brisa
+    nativo/ds
   </a>
   <nav class="navbar__nav">
     <a href="${BASE}fundacao.html" class="navbar__link">Fundação</a>
@@ -59,7 +55,7 @@ const NAV_HTML = `
   <div class="navbar__spacer"></div>
   <div class="navbar__actions">
     <a href="${BASE}" class="btn btn--ghost btn--icon btn--sm" aria-label="Início" title="Início">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      ${icon('home', 18)}
     </a>
   </div>
   <button class="navbar__toggle" data-navbar-toggle aria-label="Menu" aria-expanded="false"><span></span></button>
@@ -119,15 +115,15 @@ function buildSidebar() {
 }
 
 function injectNav(root = document) {
-  const navEl = root.querySelector ? root.querySelector('[data-brisa-nav]') : null;
+  const navEl = root.querySelector ? root.querySelector('[data-nativo-nav]') : null;
   if (navEl) {
     navEl.innerHTML = NAV_HTML;
-    navEl.removeAttribute('data-brisa-nav');
+    navEl.removeAttribute('data-nativo-nav');
   }
-  const sidebarEl = root.querySelector ? root.querySelector('[data-brisa-sidebar]') : null;
+  const sidebarEl = root.querySelector ? root.querySelector('[data-nativo-sidebar]') : null;
   if (sidebarEl) {
     sidebarEl.innerHTML = buildSidebar();
-    sidebarEl.removeAttribute('data-brisa-sidebar');
+    sidebarEl.removeAttribute('data-nativo-sidebar');
   }
 }
 
@@ -163,7 +159,7 @@ const observer = new MutationObserver((mutations) => {
 });
 observer.observe(document.body, { childList: true, subtree: true });
 
-export const Brisa = { init, toast, modal, toggleCode };
+export const Nativo = { init, toast, modal, toggleCode };
 
-window.Brisa = Brisa;
-window.DS = Brisa;
+window.Nativo = Nativo;
+window.DS = Nativo;

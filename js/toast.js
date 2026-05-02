@@ -1,13 +1,13 @@
 /**
- * Brisa Toast
+ * nativo Toast
  *
  * API:
- *   Brisa.toast.show({ message, title?, type?, duration?, closable? })
- *   Brisa.toast.success(message, options?)
- *   Brisa.toast.error(message, options?)
- *   Brisa.toast.warning(message, options?)
- *   Brisa.toast.info(message, options?)
- *   Brisa.toast.promise(promise, { loading, success, error })
+ *   Nativo.toast.show({ message, title?, type?, duration?, closable? })
+ *   Nativo.toast.success(message, options?)
+ *   Nativo.toast.error(message, options?)
+ *   Nativo.toast.warning(message, options?)
+ *   Nativo.toast.info(message, options?)
+ *   Nativo.toast.promise(promise, { loading, success, error })
  *
  * Options:
  *   message   string            — body text (required)
@@ -19,15 +19,7 @@
  */
 
 import { emit } from './utils.js';
-
-const ICONS = {
-  success: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`,
-  error:   `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`,
-  warning: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
-  info:    `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`,
-  neutral: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>`,
-  loading: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="animation:ds-spin .7s linear infinite"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>`,
-};
+import { icon } from './icons.js';
 
 const ICON_COLOR = {
   success: 'var(--feedback-success-icon)',
@@ -122,14 +114,14 @@ class ToastManager {
     el.className = 'toast';
     el.innerHTML = `
       <span class="toast__icon" style="color:${ICON_COLOR[type] ?? ICON_COLOR.neutral};flex-shrink:0;display:flex;align-items:center;">
-        ${ICONS[type] ?? ICONS.neutral}
+        ${type === 'loading' ? icon('loading', 18, { style: 'animation:nativo-spin .7s linear infinite' }) : icon(type, 18)}
       </span>
       <div class="toast__content" style="flex:1;min-width:0;">
         ${title ? `<p class="toast__title" style="font-weight:var(--weight-semibold);font-size:var(--text-sm);margin-bottom:var(--space-0-5, 0.125rem);">${title}</p>` : ''}
         <p class="toast__message" style="font-size:var(--text-sm);color:var(--text-secondary);line-height:var(--leading-snug);">${message}</p>
       </div>
       ${closable ? `<button class="toast__close" aria-label="Fechar notificação" style="flex-shrink:0;display:flex;align-items:center;background:none;border:none;cursor:pointer;color:var(--text-tertiary);padding:var(--space-1);border-radius:var(--radius-sm);transition:color var(--duration-fast) var(--ease-out);">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        ${icon('close', 14)}
       </button>` : ''}
     `;
     return el;

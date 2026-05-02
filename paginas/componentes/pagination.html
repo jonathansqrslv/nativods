@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paginação — Brisa</title>
-  <link rel="stylesheet" href="../../brisa.css">
+  <title>Paginação — nativo</title>
+  <link rel="stylesheet" href="../../nativo.css">
   <link rel="stylesheet" href="../demo.css">
 </head>
 <body class="docs-layout">
-  <div data-brisa-nav></div>
+  <div data-nativo-nav></div>
   <div class="docs-body">
-    <aside data-brisa-sidebar></aside>
+    <aside data-nativo-sidebar></aside>
     <main class="docs-main">
       <h1>Paginação</h1>
       <p class="docs-lead">Navegação entre páginas de resultados com controles de avanço e retrocesso.</p>
@@ -23,7 +23,7 @@
           <div class="demo-preview__stage demo-preview__stage--block">
             <nav class="pagination">
               <button class="pagination__item" aria-label="Anterior">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
               </button>
               <button class="pagination__item pagination__item--active" aria-current="page">1</button>
               <button class="pagination__item">2</button>
@@ -32,11 +32,11 @@
               <button class="pagination__item">8</button>
               <button class="pagination__item">9</button>
               <button class="pagination__item" aria-label="Próximo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
               </button>
             </nav>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>&lt;nav class=&quot;pagination&quot;&gt;
   &lt;button class=&quot;pagination__item&quot; aria-label=&quot;Anterior&quot;&gt;
@@ -64,7 +64,7 @@
           <div class="demo-preview__stage demo-preview__stage--block">
             <nav class="pagination pagination--outline">
               <button class="pagination__item" aria-label="Anterior">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
               </button>
               <button class="pagination__item pagination__item--active" aria-current="page">1</button>
               <button class="pagination__item">2</button>
@@ -73,11 +73,11 @@
               <button class="pagination__item">7</button>
               <button class="pagination__item">8</button>
               <button class="pagination__item" aria-label="Próximo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
               </button>
             </nav>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>&lt;nav class=&quot;pagination pagination--outline&quot;&gt;
   &lt;button class=&quot;pagination__item&quot; aria-label=&quot;Anterior&quot;&gt;
@@ -99,15 +99,15 @@
           <div class="demo-preview__stage demo-preview__stage--block">
             <nav class="pagination pagination--simple">
               <button class="pagination__item" aria-label="Anterior">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
               </button>
               <span class="pagination__info">Página 3 de 12</span>
               <button class="pagination__item" aria-label="Próximo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
               </button>
             </nav>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>&lt;nav class=&quot;pagination pagination--simple&quot;&gt;
   &lt;button class=&quot;pagination__item&quot; aria-label=&quot;Anterior&quot;&gt;
@@ -133,13 +133,13 @@
                 <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-tertiary); margin-bottom: var(--space-2);">pagination--sm</div>
                 <nav class="pagination pagination--sm">
                   <button class="pagination__item" aria-label="Anterior">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
                   </button>
                   <button class="pagination__item pagination__item--active" aria-current="page">1</button>
                   <button class="pagination__item">2</button>
                   <button class="pagination__item">3</button>
                   <button class="pagination__item" aria-label="Próximo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                   </button>
                 </nav>
               </div>
@@ -147,7 +147,7 @@
                 <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-tertiary); margin-bottom: var(--space-2);">pagination--lg</div>
                 <nav class="pagination pagination--lg">
                   <button class="pagination__item" aria-label="Anterior">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
                   </button>
                   <button class="pagination__item pagination__item--active" aria-current="page">1</button>
                   <button class="pagination__item">2</button>
@@ -155,13 +155,13 @@
                   <button class="pagination__item">4</button>
                   <button class="pagination__item">5</button>
                   <button class="pagination__item" aria-label="Próximo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                   </button>
                 </nav>
               </div>
             </div>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>&lt;nav class=&quot;pagination pagination--sm&quot;&gt;
   &lt;button class=&quot;pagination__item&quot; ...&gt;&lt;/button&gt;
@@ -179,6 +179,6 @@
       </section>
     </main>
   </div>
-  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+  <script type="module">import { Nativo } from '../../../js/nativo.js';</script>
 </body>
 </html>

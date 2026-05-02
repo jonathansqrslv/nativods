@@ -1,11 +1,11 @@
 /**
  * Legacy compatibility entry for projects that still import js/ds.js.
  *
- * New projects should import js/brisa.js and use Brisa directly.
+ * New projects should import js/nativo.js and use Nativo directly.
  */
 
-import { Brisa } from './brisa.js';
+import { Nativo } from './nativo.js';
 
-export const DS = Brisa;
+export const DS = Nativo;
 
-window.DS = Brisa;
+window.DS = Nativo;

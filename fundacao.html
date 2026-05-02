@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fundação — Brisa</title>
-  <link rel="stylesheet" href="brisa.css">
+  <title>Fundação — nativo</title>
+  <link rel="stylesheet" href="nativo.css">
   <link rel="stylesheet" href="paginas/demo.css">
   <style>
     .swatch-grid {
@@ -134,15 +134,15 @@
   </style>
 </head>
 <body class="docs-layout">
-  <div data-brisa-nav></div>
+  <div data-nativo-nav></div>
 
   <div class="docs-body">
-    <aside data-brisa-sidebar></aside>
+    <aside data-nativo-sidebar></aside>
 
     <main class="docs-main">
 
       <h1>Fundação</h1>
-      <p class="docs-lead">Tokens de design que formam a base visual da Brisa — cores, tipografia, espaçamento, sombras e movimento. Tudo conectado por variáveis CSS.</p>
+      <p class="docs-lead">Tokens de design que formam a base visual do nativo — cores, tipografia, espaçamento, sombras e movimento. Tudo conectado por variáveis CSS.</p>
 
       <!-- ======== CORES ======== -->
       <section class="docs-section" id="cores">
@@ -241,7 +241,7 @@
               <div class="swatch-item"><div class="swatch-item__box" style="background-color:var(--color-info-950)"></div><span class="swatch-item__label">950</span></div>
             </div>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>&lt;!-- Escala neutra (Areia) --&gt;
 &lt;div style=&quot;background-color: var(--color-gray-50)&quot;&gt;&lt;/div&gt;
@@ -282,7 +282,7 @@
             <div class="type-row"><span class="type-row__label">--text-xs</span><span class="type-row__sample" style="font-size:var(--text-xs);color:var(--text-tertiary)">Texto mínimo — metadados e contexto. 12px</span></div>
             <div class="type-row"><span class="type-row__label">--text-2xs</span><span class="type-row__sample" style="font-size:var(--text-2xs);color:var(--text-tertiary)">Texto micro — raro, só onde essencial. 10px</span></div>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>/* Escala Tipográfica */
 --text-6xl:  3.75rem;  /* 60px */
@@ -314,7 +314,7 @@
             <div class="type-row"><span class="type-row__label">--weight-semibold</span><span class="type-row__sample" style="font-size:var(--text-lg);font-weight:var(--weight-semibold)">Peso forte 600</span></div>
             <div class="type-row"><span class="type-row__label">--weight-bold</span><span class="type-row__sample" style="font-size:var(--text-lg);font-weight:var(--weight-bold)">Peso bem forte 700</span></div>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>/* Pesos de fonte */
 --weight-light:     300;
@@ -349,7 +349,7 @@
             <div class="space-row"><span class="space-row__label">--space-12</span><span class="space-row__value">48px</span><div class="space-bar" style="width:var(--space-12)"></div></div>
             <div class="space-row"><span class="space-row__label">--space-16</span><span class="space-row__value">64px</span><div class="space-bar space-bar--alt" style="width:var(--space-16)"></div></div>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>/* Escala de Espaçamento (base 4px) */
 --space-1:  0.25rem;   /*  4px */
@@ -410,7 +410,7 @@
               <span class="shadow-card__label">--shadow-focus</span>
             </div>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>/* Sombras */
 --shadow-xs:     0 1px 2px rgba(0,0,0,0.04);
@@ -484,7 +484,7 @@
               Interação suave
             </button>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>/* Transição com easing spring */
 transition: transform var(--duration-normal) var(--ease-spring);
@@ -506,6 +506,6 @@ transition: var(--transition-colors);
     </main>
   </div>
 
-  <script type="module">import { Brisa } from './js/brisa.js';</script>
+  <script type="module">import { Nativo } from './js/nativo.js';</script>
 </body>
 </html>

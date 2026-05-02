@@ -1,5 +1,5 @@
 /**
- * Brisa Tabs
+ * nativo Tabs
  *
  * Markup contract:
  *   <div class="tabs" data-tabs>

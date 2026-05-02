@@ -1,8 +1,8 @@
-# Brisa — Design System Brasileiro
+# nativo — design system
 
 Um sistema silencioso, mas vivo.
 
-Brisa é um design system CSS-first para interfaces que precisam de presença sem ruído. Ele nasce de uma sensibilidade brasileira sem recorrer a símbolos prontos: tons de matéria, ritmo no espaço, tipografia com voz e componentes que sustentam a experiência sem disputar atenção.
+nativo é um design system CSS-first para interfaces que precisam de presença sem ruído. Ele nasce de uma sensibilidade brasileira sem recorrer a símbolos prontos: tons de matéria, ritmo no espaço, tipografia com voz e componentes que sustentam a experiência sem disputar atenção.
 
 ## Manifesto
 
@@ -19,7 +19,7 @@ Preferimos tons naturais a cores óbvias, tipografia com voz a efeitos, pausas b
 
 Rejeitamos a estética genérica de template, componentes inflados de estilo e tendências rápidas tratadas como padrão.
 
-Brisa não tenta impressionar.
+nativo não tenta impressionar.
 Ela sustenta.
 
 ## Uso
@@ -28,18 +28,18 @@ Ela sustenta.
 
 ```html
 <head>
-  <link rel="stylesheet" href="brisa.css">
+  <link rel="stylesheet" href="nativo.css">
 </head>
 <body>
-  <script type="module" src="js/brisa.js"></script>
+  <script type="module" src="js/nativo.js"></script>
 </body>
 ```
 
 ### Com bundler
 
 ```js
-import './design-system/brisa.css';
-import './design-system/js/brisa.js';
+import './design-system/nativo.css';
+import './design-system/js/nativo.js';
 ```
 
 ### Primeiro componente
@@ -59,17 +59,17 @@ import './design-system/js/brisa.js';
 
 ## Pacotes e nomes
 
-Use `Brisa` como nome público do sistema.
+Use `Nativo` como nome público do sistema.
 
 ```css
-@import '@brisa/system/brisa.css';
+@import '@nativo/system/nativo.css';
 ```
 
 ```js
-import { Brisa } from '@brisa/system/js/brisa.js';
+import { Nativo } from '@nativo/system/js/nativo.js';
 ```
 
-`ds.css`, `js/ds.js` e `window.DS` continuam disponíveis para projetos que já dependem desses nomes. Em código novo, prefira `brisa.css`, `js/brisa.js` e `window.Brisa`.
+`ds.css`, `js/ds.js` e `window.DS` continuam disponíveis para projetos que já dependem desses nomes. Em código novo, prefira `nativo.css`, `js/nativo.js` e `window.Nativo`.
 
 ## Estrutura
 
@@ -77,7 +77,7 @@ A estrutura separa fundamento, composição e comportamento. O CSS carrega a ide
 
 ```text
 design-system/
-├── brisa.css                 entry point principal
+├── nativo.css                 entry point principal
 ├── ds.css                    entry point legado
 ├── index.html                demo visual
 ├── tokens/
@@ -101,7 +101,7 @@ design-system/
 
 ## Identidade
 
-Brisa parte de uma base neutra quente e de um eixo verde profundo. A referência é gráfica e material, não literal: cartaz de rua, azulejo, tecido, sombra, sol duro, recorte. Mata é o acento padrão; Ipê traz luz; Céu aparece em informação; Urucum e Terra entram como calor e contraste.
+nativo parte de uma base neutra quente e de um eixo verde profundo. A referência é gráfica e material, não literal: cartaz de rua, azulejo, tecido, sombra, sol duro, recorte. Mata é o acento padrão; Ipê traz luz; Céu aparece em informação; Urucum e Terra entram como calor e contraste.
 
 O moodboard entra como ritmo, cor e matéria. Não como bandeira aplicada em todo canto.
 
@@ -145,7 +145,7 @@ Principais famílias:
 
 ## Dark Mode
 
-Brisa acompanha `prefers-color-scheme`. Quando a interface precisar decidir por conta própria, use `data-theme` no `html`.
+nativo acompanha `prefers-color-scheme`. Quando a interface precisar decidir por conta própria, use `data-theme` no `html`.
 
 ```html
 <html data-theme="light">
@@ -163,7 +163,7 @@ Tema e acento podem trabalhar juntos:
 As layers deixam claro o que é fundação e o que é aplicação. A ordem vai do mais estrutural ao mais próximo do uso.
 
 ```css
-@layer brisa-tokens, brisa-reset, brisa-base, brisa-layout, brisa-components, brisa-utilities;
+@layer nativo-tokens, nativo-reset, nativo-base, nativo-layout, nativo-components, nativo-utilities;
 ```
 
 CSS escrito pela aplicação fora de `@layer` vence o sistema sem `!important`.
@@ -188,7 +188,7 @@ Os componentes cobrem padrões comuns sem carregar uma assinatura visual pesada.
 
 ## Layout
 
-Layout em Brisa organiza fluxo antes de decorar superfície. `container`, `grid`, `stack` e `inline` resolvem alinhamento, largura e ritmo entre elementos.
+Layout em nativo organiza fluxo antes de decorar superfície. `container`, `grid`, `stack` e `inline` resolvem alinhamento, largura e ritmo entre elementos.
 
 ```html
 <main class="container container--lg">
@@ -206,22 +206,22 @@ Layout em Brisa organiza fluxo antes de decorar superfície. `container`, `grid`
 A camada JS é opcional. Ela cuida de comportamento: foco, teclado, dropdowns, tabs, modais, drawers, navbar e toasts.
 
 ```html
-<script type="module" src="js/brisa.js"></script>
+<script type="module" src="js/nativo.js"></script>
 ```
 
 ```js
-Brisa.toast.success('Salvo com sucesso!');
-Brisa.toast.error('Não foi possível salvar.');
-Brisa.modal.open('confirmar-exclusao');
-Brisa.init(container);
+Nativo.toast.success('Salvo com sucesso!');
+Nativo.toast.error('Não foi possível salvar.');
+Nativo.modal.open('confirmar-exclusao');
+Nativo.init(container);
 ```
 
-`Brisa.init()` roda no carregamento e em nós adicionados ao `document.body`.
+`Nativo.init()` roda no carregamento e em nós adicionados ao `document.body`.
 
 ## Acessibilidade
 
-Brisa oferece foco visível, navegação por teclado, suporte a `prefers-reduced-motion`, estados semânticos e padrões ARIA nos comportamentos JS. A aplicação continua responsável por bons rótulos, textos claros e HTML semântico.
+nativo oferece foco visível, navegação por teclado, suporte a `prefers-reduced-motion`, estados semânticos e padrões ARIA nos comportamentos JS. A aplicação continua responsável por bons rótulos, textos claros e HTML semântico.
 
 ## Suporte
 
-Brisa usa CSS com suporte amplo em navegadores atuais: custom properties, cascade layers, `:focus-visible`, `:has()` em alguns aprimoramentos e `dialog` nativo.
+nativo usa CSS com suporte amplo em navegadores atuais: custom properties, cascade layers, `:focus-visible`, `:has()` em alguns aprimoramentos e `dialog` nativo.

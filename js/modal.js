@@ -1,21 +1,9 @@
 /**
- * Brisa Modal / Drawer
+ * nativo Modal / Drawer
  *
- * Enhances native <dialog> with:
- *   - Focus trap (via utils.trapFocus)
- *   - Body scroll lock
- *   - Backdrop click to close (opt-out with data-modal-no-backdrop-close)
- *   - Escape key (native <dialog> already handles this, but we unlock scroll)
- *   - Stacking z-index management
- *
- * Usage:
- *   <dialog id="my-modal" class="modal" data-modal>…</dialog>
- *   <button data-modal-open="my-modal">Abrir</button>
- *   <button data-modal-close>Fechar</button>
- *
- * JS API:
- *   Brisa.modal.open('my-modal')
- *   Brisa.modal.close('my-modal')
+ * API:
+ *   Nativo.modal.open('my-modal')
+ *   Nativo.modal.close('my-modal')
  */
 
 import { trapFocus, lockScroll, unlockScroll, emit } from './utils.js';

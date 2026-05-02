@@ -1,5 +1,5 @@
 /**
- * Brisa Navbar
+ * nativo Navbar
  *
  * Handles:
  *   - Mobile nav toggle (hamburger)

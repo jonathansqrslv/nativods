@@ -1,5 +1,5 @@
 /**
- * Brisa Utils — shared primitives for behavior layer
+ * nativo Utils — shared primitives for behavior layer
  */
 
 let _uidCounter = 0;
@@ -78,5 +78,5 @@ export function unlockScroll() {
  * Dispatch a custom event from an element.
  */
 export function emit(el, name, detail = {}) {
-  el.dispatchEvent(new CustomEvent(`brisa:${name}`, { bubbles: true, detail }));
+  el.dispatchEvent(new CustomEvent(`nativo:${name}`, { bubbles: true, detail }));
 }

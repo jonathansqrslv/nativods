@@ -1,2 +1,2 @@
-@import "./reset.css" layer(brisa-reset);
-@import "./base.css"  layer(brisa-base);
+@import "./reset.css" layer(nativo-reset);
+@import "./base.css"  layer(nativo-base);

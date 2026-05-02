@@ -51,7 +51,7 @@
 .avatar--purple { background-color: #f4edf7;                   color: #74466f; }
 .avatar--teal   { background-color: var(--color-info-100);     color: var(--color-info-700); }
 
-/* Brisa aliases */
+/* nativo aliases */
 .avatar--terra   { background-color: var(--color-terra-100);   color: var(--color-terra-700); }
 .avatar--mata    { background-color: var(--color-success-100); color: var(--color-success-700); }
 .avatar--ipe     { background-color: var(--color-warning-100); color: var(--color-warning-700); }

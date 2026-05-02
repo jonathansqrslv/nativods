@@ -1,6 +1,6 @@
 /* ==========================================================================
 
-   BRISA — Design System Brasileiro
+   nativo — Design System Brasileiro
    Um sistema silencioso, mas vivo.
 
    Criamos interfaces que não gritam.
@@ -15,7 +15,7 @@
    ·
 
    Uso:
-     <link rel="stylesheet" href="brisa.css">
+     <link rel="stylesheet" href="nativo.css">
 
    Dark mode:
      Automático via prefers-color-scheme
@@ -30,12 +30,12 @@
      data-accent="roxo"    — acento secundário
 
    Cascade layers (menor → maior prioridade):
-     brisa-tokens → brisa-reset → brisa-base →
-     brisa-layout → brisa-components → brisa-utilities
+     nativo-tokens → nativo-reset → nativo-base →
+     nativo-layout → nativo-components → nativo-utilities
 
    ========================================================================== */
 
-@layer brisa-tokens, brisa-reset, brisa-base, brisa-layout, brisa-components, brisa-utilities;
+@layer nativo-tokens, nativo-reset, nativo-base, nativo-layout, nativo-components, nativo-utilities;
 
 @import "./tokens/index.css";
 @import "./tokens/themes/index.css";

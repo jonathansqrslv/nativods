@@ -1,12 +1,12 @@
 /* ==========================================================================
-   Brisa — entrada de compatibilidade
+   nativo — entrada de compatibilidade
 
-   Use brisa.css em projetos novos. Este arquivo permanece para que
+   Use nativo.css em projetos novos. Este arquivo permanece para que
    integrações que importam ds.css continuem recebendo o mesmo sistema.
 
    Usage:
      <link rel="stylesheet" href="ds.css">     legado
-     <link rel="stylesheet" href="brisa.css">  preferencial
+     <link rel="stylesheet" href="nativo.css">  preferencial
 
    Dark mode:
      Automático via prefers-color-scheme
@@ -20,11 +20,11 @@
      utilities/  — classes atômicas
 
    Cascade layers (menor -> maior prioridade):
-     brisa-tokens -> brisa-reset -> brisa-base ->
-     brisa-layout -> brisa-components -> brisa-utilities
+     nativo-tokens -> nativo-reset -> nativo-base ->
+     nativo-layout -> nativo-components -> nativo-utilities
    ========================================================================== */
 
-@layer brisa-tokens, brisa-reset, brisa-base, brisa-layout, brisa-components, brisa-utilities;
+@layer nativo-tokens, nativo-reset, nativo-base, nativo-layout, nativo-components, nativo-utilities;
 
 @import "./tokens/index.css";
 @import "./tokens/themes/index.css";

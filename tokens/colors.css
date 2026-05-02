@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BRISA — COLOR TOKENS
+   nativo — COLOR TOKENS
    Paleta natural. Tons que respiram, não gritam.
    ========================================================================== */
 
@@ -111,7 +111,7 @@
   --color-terra-950: #37160a;
 
   /* Aliases de identidade.
-     Mantêm a API semântica estável e deixam a voz Brisa disponível
+     Mantêm a API semântica estável e deixam a voz nativo disponível
      para documentação, demos e extensões de produto.
   */
   --color-areia-0:   var(--color-gray-0);

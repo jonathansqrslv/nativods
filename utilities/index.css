@@ -1,4 +1,4 @@
-@import "./spacing.css"    layer(brisa-utilities);
-@import "./typography.css" layer(brisa-utilities);
-@import "./colors.css"     layer(brisa-utilities);
-@import "./display.css"    layer(brisa-utilities);
+@import "./spacing.css"    layer(nativo-utilities);
+@import "./typography.css" layer(nativo-utilities);
+@import "./colors.css"     layer(nativo-utilities);
+@import "./display.css"    layer(nativo-utilities);

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout — Brisa</title>
-  <link rel="stylesheet" href="brisa.css">
+  <title>Layout — nativo</title>
+  <link rel="stylesheet" href="nativo.css">
   <link rel="stylesheet" href="paginas/demo.css">
   <style>
     .demo-box {
@@ -17,9 +17,9 @@
   </style>
 </head>
 <body class="docs-layout">
-  <div data-brisa-nav></div>
+  <div data-nativo-nav></div>
   <div class="docs-body">
-    <aside data-brisa-sidebar></aside>
+    <aside data-nativo-sidebar></aside>
     <main class="docs-main">
       <h1>Layout</h1>
       <p class="docs-lead">Primitivos de layout para estruturar páginas com grid, stack e containers responsivos.</p>
@@ -34,7 +34,7 @@
             <div class="container container--lg"><div class="demo-box">Container LG</div></div>
             <div class="container container--xl"><div class="demo-box">Container XL</div></div>
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>&lt;div class=&quot;container container--sm&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;container&quot;&gt;...&lt;/div&gt;
@@ -72,7 +72,7 @@
             </div>
 
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>&lt;div class=&quot;grid grid--cols-2 grid--gap-5&quot;&gt;
   &lt;div&gt;Coluna 1&lt;/div&gt;
@@ -121,7 +121,7 @@
             </div>
 
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>&lt;div class=&quot;stack stack--gap-2&quot;&gt;
   &lt;div&gt;Item 1&lt;/div&gt;
@@ -171,7 +171,7 @@
             </div>
 
           </div>
-          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <button class="demo-preview__toggle" onclick="Nativo.toggleCode(this)">Mostrar código</button>
           <div class="demo-preview__code" hidden>
             <pre><code>&lt;div class=&quot;inline inline--gap-1&quot;&gt;
   &lt;span class=&quot;badge badge--primary&quot;&gt;Tag&lt;/span&gt;
@@ -191,6 +191,6 @@
       </section>
     </main>
   </div>
-  <script type="module">import { Brisa } from './js/brisa.js';</script>
+  <script type="module">import { Nativo } from './js/nativo.js';</script>
 </body>
 </html>

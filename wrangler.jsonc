@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nativods",
+  "compatibility_date": "2026-05-02",
+  "assets": {
+    "directory": ".",
+    "exclude": ["node_modules/**", ".git/**", ".github/**"]
+  },
+  "observability": {
+    "enabled": true
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}

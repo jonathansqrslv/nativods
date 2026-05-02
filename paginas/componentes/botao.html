@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Botão</h1>
+      <p class="docs-lead">O botão é o elemento acionador de ações. Use para enviar formulários, confirmar decisões ou navegar.</p>
+
+      <section class="docs-section">
+        <h2>Variantes</h2>
+        <p>Seis variantes para cada contexto: ações primárias, secundárias e destrutivas.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <button class="btn btn--solid">Solid</button>
+            <button class="btn btn--outline">Outline</button>
+            <button class="btn btn--ghost">Ghost</button>
+            <button class="btn btn--neutral">Neutral</button>
+            <button class="btn btn--danger">Danger</button>
+            <button class="btn btn--danger-outline">Danger Outline</button>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;button class="btn btn--solid"&gt;Solid&lt;/button&gt;
+&lt;button class="btn btn--outline"&gt;Outline&lt;/button&gt;
+&lt;button class="btn btn--ghost"&gt;Ghost&lt;/button&gt;
+&lt;button class="btn btn--neutral"&gt;Neutral&lt;/button&gt;
+&lt;button class="btn btn--danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn--danger-outline"&gt;Danger Outline&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Tamanhos</h2>
+        <p>De xs a xl, para qualquer densidade de interface.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <button class="btn btn--solid btn--xs">XS</button>
+            <button class="btn btn--solid btn--sm">SM</button>
+            <button class="btn btn--solid">MD</button>
+            <button class="btn btn--solid btn--lg">LG</button>
+            <button class="btn btn--solid btn--xl">XL</button>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;button class="btn btn--solid btn--xs"&gt;XS&lt;/button&gt;
+&lt;button class="btn btn--solid btn--sm"&gt;SM&lt;/button&gt;
+&lt;button class="btn btn--solid"&gt;MD&lt;/button&gt;
+&lt;button class="btn btn--solid btn--lg"&gt;LG&lt;/button&gt;
+&lt;button class="btn btn--solid btn--xl"&gt;XL&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Ícone</h2>
+        <p>Botões só de ícone adaptam o tamanho automaticamente.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <button class="btn btn--solid btn--icon btn--xs" aria-label="Voltar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="btn btn--solid btn--icon btn--sm" aria-label="Voltar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="btn btn--solid btn--icon" aria-label="Voltar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="btn btn--solid btn--icon btn--lg" aria-label="Voltar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="btn btn--solid btn--icon btn--xl" aria-label="Voltar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;button class="btn btn--solid btn--icon btn--sm" aria-label="Voltar"&gt;
+  &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;polyline points="15 18 9 12 15 6"/&gt;&lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Estados</h2>
+        <p>Estados desabilitado e carregando.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <button class="btn btn--solid" disabled>Desabilitado</button>
+            <button class="btn btn--outline" disabled>Desabilitado</button>
+            <button class="btn btn--solid btn--loading" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h4M18 12h4M12 2v4M12 18v4"/></svg>
+              Carregando
+            </button>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;button class="btn btn--solid" disabled&gt;Desabilitado&lt;/button&gt;
+&lt;button class="btn btn--outline" disabled&gt;Desabilitado&lt;/button&gt;
+&lt;button class="btn btn--solid btn--loading" disabled&gt;Carregando&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Bloco</h2>
+        <p>Botões que ocupam toda a largura disponível.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <button class="btn btn--solid btn--block">Botão de bloco</button>
+            <button class="btn btn--outline btn--block">Outline de bloco</button>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;button class="btn btn--solid btn--block"&gt;Botão de bloco&lt;/button&gt;
+&lt;button class="btn btn--outline btn--block"&gt;Outline de bloco&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

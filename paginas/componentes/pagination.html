@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paginação — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Paginação</h1>
+      <p class="docs-lead">Navegação entre páginas de resultados com controles de avanço e retrocesso.</p>
+
+      <!-- Padrão -->
+      <section class="docs-section">
+        <h2>Padrão</h2>
+        <p>Paginação completa com setas de navegação, números de página e elipse para intervalos extensos.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <nav class="pagination">
+              <button class="pagination__item" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button class="pagination__item pagination__item--active" aria-current="page">1</button>
+              <button class="pagination__item">2</button>
+              <button class="pagination__item">3</button>
+              <span class="pagination__ellipsis">&hellip;</span>
+              <button class="pagination__item">8</button>
+              <button class="pagination__item">9</button>
+              <button class="pagination__item" aria-label="Próximo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </nav>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;nav class=&quot;pagination&quot;&gt;
+  &lt;button class=&quot;pagination__item&quot; aria-label=&quot;Anterior&quot;&gt;
+    &lt;svg ...&gt;&lt;polyline points=&quot;15 18 9 12 15 6&quot;/&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;pagination__item pagination__item--active&quot; aria-current=&quot;page&quot;&gt;1&lt;/button&gt;
+  &lt;button class=&quot;pagination__item&quot;&gt;2&lt;/button&gt;
+  &lt;button class=&quot;pagination__item&quot;&gt;3&lt;/button&gt;
+  &lt;span class=&quot;pagination__ellipsis&quot;&gt;&amp;hellip;&lt;/span&gt;
+  &lt;button class=&quot;pagination__item&quot;&gt;8&lt;/button&gt;
+  &lt;button class=&quot;pagination__item&quot;&gt;9&lt;/button&gt;
+  &lt;button class=&quot;pagination__item&quot; aria-label=&quot;Próximo&quot;&gt;
+    &lt;svg ...&gt;&lt;polyline points=&quot;9 18 15 12 9 6&quot;/&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Outline -->
+      <section class="docs-section">
+        <h2>Outline</h2>
+        <p>Use <code class="docs-code">pagination--outline</code> para uma variante com bordas visíveis em todos os itens. O item ativo recebe borda colorida sem preenchimento.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <nav class="pagination pagination--outline">
+              <button class="pagination__item" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button class="pagination__item pagination__item--active" aria-current="page">1</button>
+              <button class="pagination__item">2</button>
+              <button class="pagination__item">3</button>
+              <span class="pagination__ellipsis">&hellip;</span>
+              <button class="pagination__item">7</button>
+              <button class="pagination__item">8</button>
+              <button class="pagination__item" aria-label="Próximo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </nav>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;nav class=&quot;pagination pagination--outline&quot;&gt;
+  &lt;button class=&quot;pagination__item&quot; aria-label=&quot;Anterior&quot;&gt;
+    &lt;svg ...&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;pagination__item pagination__item--active&quot; aria-current=&quot;page&quot;&gt;1&lt;/button&gt;
+  &lt;button class=&quot;pagination__item&quot;&gt;2&lt;/button&gt;
+  ...
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simples -->
+      <section class="docs-section">
+        <h2>Simples</h2>
+        <p>Use <code class="docs-code">pagination--simple</code> para uma navegação reduzida com apenas botões de avançar/retroceder e informação da página atual.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <nav class="pagination pagination--simple">
+              <button class="pagination__item" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <span class="pagination__info">Página 3 de 12</span>
+              <button class="pagination__item" aria-label="Próximo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </nav>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;nav class=&quot;pagination pagination--simple&quot;&gt;
+  &lt;button class=&quot;pagination__item&quot; aria-label=&quot;Anterior&quot;&gt;
+    &lt;svg ...&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;span class=&quot;pagination__info&quot;&gt;Página 3 de 12&lt;/span&gt;
+  &lt;button class=&quot;pagination__item&quot; aria-label=&quot;Próximo&quot;&gt;
+    &lt;svg ...&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tamanhos -->
+      <section class="docs-section">
+        <h2>Tamanhos</h2>
+        <p>Use <code class="docs-code">pagination--sm</code> para contextos compactos e <code class="docs-code">pagination--lg</code> para interfaces que pedem mais destaque.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div style="display: flex; flex-direction: column; gap: var(--space-6); width: 100%;">
+              <div>
+                <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-tertiary); margin-bottom: var(--space-2);">pagination--sm</div>
+                <nav class="pagination pagination--sm">
+                  <button class="pagination__item" aria-label="Anterior">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  </button>
+                  <button class="pagination__item pagination__item--active" aria-current="page">1</button>
+                  <button class="pagination__item">2</button>
+                  <button class="pagination__item">3</button>
+                  <button class="pagination__item" aria-label="Próximo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                  </button>
+                </nav>
+              </div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-tertiary); margin-bottom: var(--space-2);">pagination--lg</div>
+                <nav class="pagination pagination--lg">
+                  <button class="pagination__item" aria-label="Anterior">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  </button>
+                  <button class="pagination__item pagination__item--active" aria-current="page">1</button>
+                  <button class="pagination__item">2</button>
+                  <button class="pagination__item">3</button>
+                  <button class="pagination__item">4</button>
+                  <button class="pagination__item">5</button>
+                  <button class="pagination__item" aria-label="Próximo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                  </button>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;nav class=&quot;pagination pagination--sm&quot;&gt;
+  &lt;button class=&quot;pagination__item&quot; ...&gt;&lt;/button&gt;
+  &lt;button class=&quot;pagination__item pagination__item--active&quot; ...&gt;1&lt;/button&gt;
+  ...
+&lt;/nav&gt;
+
+&lt;nav class=&quot;pagination pagination--lg&quot;&gt;
+  &lt;button class=&quot;pagination__item&quot; ...&gt;&lt;/button&gt;
+  &lt;button class=&quot;pagination__item pagination__item--active&quot; ...&gt;1&lt;/button&gt;
+  ...
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

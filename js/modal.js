@@ -1,5 +1,5 @@
 /**
- * DS Modal / Drawer
+ * Brisa Modal / Drawer
  *
  * Enhances native <dialog> with:
  *   - Focus trap (via utils.trapFocus)
@@ -14,8 +14,8 @@
  *   <button data-modal-close>Fechar</button>
  *
  * JS API:
- *   DS.modal.open('my-modal')
- *   DS.modal.close('my-modal')
+ *   Brisa.modal.open('my-modal')
+ *   Brisa.modal.close('my-modal')
  */
 
 import { trapFocus, lockScroll, unlockScroll, emit } from './utils.js';

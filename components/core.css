@@ -1,0 +1,7 @@
+@import "./button.css"   layer(brisa-components);
+@import "./input.css"    layer(brisa-components);
+@import "./checkbox.css" layer(brisa-components);
+@import "./card.css"     layer(brisa-components);
+@import "./badge.css"    layer(brisa-components);
+@import "./table.css"    layer(brisa-components);
+@import "./avatar.css"   layer(brisa-components);

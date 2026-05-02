@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Card</h1>
+      <p class="docs-lead">Container para agrupar conteúdo relacionado. Versátil para listas, dashboards e seções.</p>
+
+      <section class="docs-section">
+        <h2>Padrão</h2>
+        <p>Card com cabeçalho, corpo, divisor e rodapé.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-5);max-width:360px;">
+            <div class="card">
+              <div class="card__header">
+                <h3 class="card__title">Relatório mensal</h3>
+                <span class="badge badge--info">Novo</span>
+              </div>
+              <div class="card__body">
+                <p class="card__description">Análise de desempenho do segundo trimestre com indicadores de acesso e engajamento.</p>
+              </div>
+              <hr class="card__divider">
+              <div class="card__footer">
+                <button class="btn btn--ghost btn--sm">Cancelar</button>
+                <button class="btn btn--solid btn--sm">Acessar</button>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="card"&gt;
+  &lt;div class="card__header"&gt;
+    &lt;h3 class="card__title"&gt;Relatório mensal&lt;/h3&gt;
+    &lt;span class="badge badge--info"&gt;Novo&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="card__body"&gt;
+    &lt;p class="card__description"&gt;Análise de desempenho do segundo trimestre...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;hr class="card__divider"&gt;
+  &lt;div class="card__footer"&gt;
+    &lt;button class="btn btn--ghost btn--sm"&gt;Cancelar&lt;/button&gt;
+    &lt;button class="btn btn--solid btn--sm"&gt;Acessar&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Elevado</h2>
+        <p>Card sem borda, com sombra suave.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-5);max-width:360px;">
+            <div class="card card--elevated">
+              <div class="card__header">
+                <h3 class="card__title">Destaque elevado</h3>
+              </div>
+              <div class="card__body">
+                <p class="card__description">Este card flutua sobre o fundo com uma sombra sutil. Ideal para destaque sem borda.</p>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="card card--elevated"&gt;
+  &lt;div class="card__header"&gt;
+    &lt;h3 class="card__title"&gt;Destaque elevado&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="card__body"&gt;
+    &lt;p class="card__description"&gt;Este card flutua sobre o fundo com uma sombra sutil.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Flat</h2>
+        <p>Card com fundo sutil, sem borda.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-5);max-width:360px;">
+            <div class="card card--flat">
+              <div class="card__header">
+                <h3 class="card__title">Seção interna</h3>
+              </div>
+              <div class="card__body">
+                <p class="card__description">Fundo levemente colorido para seções dentro de layouts mais amplos.</p>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="card card--flat"&gt;
+  &lt;div class="card__header"&gt;
+    &lt;h3 class="card__title"&gt;Seção interna&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="card__body"&gt;
+    &lt;p class="card__description"&gt;Fundo levemente colorido para seções dentro de layouts mais amplos.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Hoverable</h2>
+        <p>Card que responde ao cursor com um destaque suave.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-5);max-width:360px;">
+            <div class="card card--hoverable">
+              <div class="card__header">
+                <h3 class="card__title">Passe o cursor</h3>
+              </div>
+              <div class="card__body">
+                <p class="card__description">Este card ganha um destaque sutil quando você passa o cursor sobre ele.</p>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="card card--hoverable"&gt;
+  &lt;div class="card__header"&gt;
+    &lt;h3 class="card__title"&gt;Passe o cursor&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="card__body"&gt;
+    &lt;p class="card__description"&gt;Este card ganha um destaque sutil quando você passa o cursor sobre ele.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Tamanhos</h2>
+        <p>Variantes compacta e ampla.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-5);max-width:360px;">
+            <div class="card card--sm">
+              <div class="card__body">
+                <h3 class="card__title">Card compacto</h3>
+                <p class="card__description">Menor espaçamento interno.</p>
+              </div>
+            </div>
+            <div class="card card--lg">
+              <div class="card__body">
+                <h3 class="card__title">Card amplo</h3>
+                <p class="card__description">Maior espaçamento interno para conteúdo extenso.</p>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="card card--sm"&gt;
+  &lt;div class="card__body"&gt;
+    &lt;h3 class="card__title"&gt;Card compacto&lt;/h3&gt;
+    &lt;p class="card__description"&gt;Menor espaçamento interno.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card--lg"&gt;
+  &lt;div class="card__body"&gt;
+    &lt;h3 class="card__title"&gt;Card amplo&lt;/h3&gt;
+    &lt;p class="card__description"&gt;Maior espaçamento interno para conteúdo extenso.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

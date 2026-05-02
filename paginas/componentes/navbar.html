@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Navbar</h1>
+      <p class="docs-lead">Barra de navegação superior fixa com links, ações e menu mobile.</p>
+
+      <!-- Padrão -->
+      <section class="docs-section">
+        <h2>Padrão</h2>
+        <p>Barra de navegação com marca, links de seção e área de ações.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+              <nav class="navbar">
+                <a class="navbar__brand" href="#">Brisa</a>
+                <div class="navbar__nav">
+                  <a class="navbar__link navbar__link--active" href="#" aria-current="page">Início</a>
+                  <a class="navbar__link" href="#">Componentes</a>
+                  <a class="navbar__link" href="#">Documentação</a>
+                </div>
+                <div class="navbar__spacer"></div>
+                <div class="navbar__actions">
+                  <button class="btn btn--ghost btn--sm">Entrar</button>
+                  <button class="btn btn--solid btn--sm">Cadastrar</button>
+                </div>
+              </nav>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;nav class=&quot;navbar&quot;&gt;
+  &lt;a class=&quot;navbar__brand&quot; href=&quot;#&quot;&gt;Brisa&lt;/a&gt;
+  &lt;div class=&quot;navbar__nav&quot;&gt;
+    &lt;a class=&quot;navbar__link navbar__link--active&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Início&lt;/a&gt;
+    &lt;a class=&quot;navbar__link&quot; href=&quot;#&quot;&gt;Componentes&lt;/a&gt;
+    &lt;a class=&quot;navbar__link&quot; href=&quot;#&quot;&gt;Documentação&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;navbar__spacer&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;navbar__actions&quot;&gt;
+    &lt;button class=&quot;btn btn--ghost btn--sm&quot;&gt;Entrar&lt;/button&gt;
+    &lt;button class=&quot;btn btn--solid btn--sm&quot;&gt;Cadastrar&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Elevado -->
+      <section class="docs-section">
+        <h2>Elevado</h2>
+        <p>Use <code class="docs-code">navbar--elevated</code> para adicionar uma sombra sutil quando a barra precisa se destacar do conteúdo.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+              <nav class="navbar navbar--elevated">
+                <a class="navbar__brand" href="#">Brisa</a>
+                <div class="navbar__nav">
+                  <a class="navbar__link navbar__link--active" href="#" aria-current="page">Início</a>
+                  <a class="navbar__link" href="#">Componentes</a>
+                  <a class="navbar__link" href="#">Documentação</a>
+                </div>
+                <div class="navbar__spacer"></div>
+                <div class="navbar__actions">
+                  <button class="btn btn--outline btn--sm">Exportar</button>
+                  <button class="btn btn--solid btn--sm">Publicar</button>
+                </div>
+              </nav>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;nav class=&quot;navbar navbar--elevated&quot;&gt;
+  &lt;a class=&quot;navbar__brand&quot; href=&quot;#&quot;&gt;Brisa&lt;/a&gt;
+  &lt;div class=&quot;navbar__nav&quot;&gt;
+    &lt;a class=&quot;navbar__link navbar__link--active&quot; ...&gt;Início&lt;/a&gt;
+    &lt;a class=&quot;navbar__link&quot; ...&gt;Componentes&lt;/a&gt;
+    &lt;a class=&quot;navbar__link&quot; ...&gt;Documentação&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;navbar__spacer&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;navbar__actions&quot;&gt;
+    &lt;button class=&quot;btn btn--outline btn--sm&quot;&gt;Exportar&lt;/button&gt;
+    &lt;button class=&quot;btn btn--solid btn--sm&quot;&gt;Publicar&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <section class="docs-section">
+        <h2>Sidebar</h2>
+        <p>Navegação lateral com seções, ícones e badges. Ideal para painéis administrativos.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+              <nav class="sidebar">
+                <div class="sidebar__section">
+                  <div class="sidebar__label">Principal</div>
+                  <button class="sidebar__item sidebar__item--active" aria-current="page">
+                    <svg class="sidebar__item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Dashboard
+                  </button>
+                  <button class="sidebar__item">
+                    <svg class="sidebar__item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    Relatórios
+                  </button>
+                  <button class="sidebar__item">
+                    <svg class="sidebar__item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Monitor
+                  </button>
+                </div>
+                <div class="sidebar__section">
+                  <div class="sidebar__label">Configurações</div>
+                  <button class="sidebar__item">
+                    <svg class="sidebar__item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    Geral
+                  </button>
+                  <button class="sidebar__item">
+                    <svg class="sidebar__item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Segurança
+                  </button>
+                  <button class="sidebar__item">
+                    <svg class="sidebar__item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                    Integrações
+                    <span class="sidebar__item__badge"><span class="badge badge--notification">2</span></span>
+                  </button>
+                </div>
+              </nav>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;nav class=&quot;sidebar&quot;&gt;
+  &lt;div class=&quot;sidebar__section&quot;&gt;
+    &lt;div class=&quot;sidebar__label&quot;&gt;Principal&lt;/div&gt;
+    &lt;button class=&quot;sidebar__item sidebar__item--active&quot; aria-current=&quot;page&quot;&gt;
+      &lt;svg class=&quot;sidebar__item__icon&quot; ...&gt;&lt;/svg&gt;
+      Dashboard
+    &lt;/button&gt;
+    &lt;button class=&quot;sidebar__item&quot;&gt;
+      &lt;svg class=&quot;sidebar__item__icon&quot; ...&gt;&lt;/svg&gt;
+      Relatórios
+    &lt;/button&gt;
+    &lt;button class=&quot;sidebar__item&quot;&gt;
+      &lt;svg class=&quot;sidebar__item__icon&quot; ...&gt;&lt;/svg&gt;
+      Monitor
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sidebar__section&quot;&gt;
+    &lt;div class=&quot;sidebar__label&quot;&gt;Configurações&lt;/div&gt;
+    &lt;button class=&quot;sidebar__item&quot;&gt;
+      &lt;svg class=&quot;sidebar__item__icon&quot; ...&gt;&lt;/svg&gt;
+      Geral
+    &lt;/button&gt;
+    &lt;button class=&quot;sidebar__item&quot;&gt;
+      &lt;svg class=&quot;sidebar__item__icon&quot; ...&gt;&lt;/svg&gt;
+      Segurança
+    &lt;/button&gt;
+    &lt;button class=&quot;sidebar__item&quot;&gt;
+      &lt;svg class=&quot;sidebar__item__icon&quot; ...&gt;&lt;/svg&gt;
+      Integrações
+      &lt;span class=&quot;sidebar__item__badge&quot;&gt;
+        &lt;span class=&quot;badge badge--notification&quot;&gt;2&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

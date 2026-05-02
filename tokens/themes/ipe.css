@@ -1,0 +1,36 @@
+/* ==========================================================================
+   TEMA: Ipê — Luz amarela, usada com contraste
+   data-accent="ipe"
+   ========================================================================== */
+
+[data-accent="ipe"] {
+  --color-accent-50:  #fffbe5;
+  --color-accent-100: #fff4b8;
+  --color-accent-200: #ffe873;
+  --color-accent-300: #ffd92f;
+  --color-accent-400: #f7c600;
+  --color-accent-500: #d9a900;
+  --color-accent-600: #a87b00;
+  --color-accent-700: #805b00;
+  --color-accent-800: #624500;
+  --color-accent-900: #4a3400;
+  --color-accent-950: #422006;
+
+  --interactive-default:      var(--color-accent-700);
+  --interactive-hover:        var(--color-accent-800);
+  --interactive-active:       var(--color-accent-900);
+  --interactive-subtle:       var(--color-accent-50);
+  --interactive-subtle-hover: var(--color-accent-100);
+  --border-focus:             var(--color-accent-500);
+  --shadow-focus:             0 0 0 3px color-mix(in srgb, var(--interactive-default) 35%, transparent);
+}
+
+[data-accent="ipe"][data-theme="dark"],
+[data-theme="dark"][data-accent="ipe"] {
+  --interactive-default:      var(--color-accent-400);
+  --interactive-hover:        var(--color-accent-300);
+  --interactive-active:       var(--color-accent-200);
+  --interactive-subtle:       rgba(234, 179, 8, 0.12);
+  --interactive-subtle-hover: rgba(234, 179, 8, 0.2);
+  --border-focus:             var(--color-accent-400);
+}

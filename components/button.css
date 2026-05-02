@@ -18,18 +18,13 @@
   border: 1px solid transparent;
   border-radius: var(--radius-md);
   text-decoration: none;
-  transition: var(--transition-colors), box-shadow var(--duration-normal) var(--ease-out),
-              transform var(--duration-fast) var(--ease-out);
+  transition: var(--transition-colors), box-shadow var(--duration-normal) var(--ease-out);
   position: relative;
   outline: none;
 }
 
 .btn:focus-visible {
   box-shadow: var(--shadow-focus);
-}
-
-.btn:active:not(:disabled) {
-  transform: translateY(1px);
 }
 
 .btn:disabled,
@@ -41,7 +36,7 @@
 
 /* ---- Variants ---- */
 
-/* Solid (default) */
+/* Primário */
 .btn--solid {
   background-color: var(--interactive-default);
   color: var(--text-on-accent);
@@ -56,7 +51,7 @@
   border-color: var(--interactive-active);
 }
 
-/* Outline */
+/* Contorno */
 .btn--outline {
   background-color: transparent;
   color: var(--interactive-default);
@@ -69,7 +64,7 @@
   background-color: var(--interactive-subtle-hover);
 }
 
-/* Ghost */
+/* Discreto */
 .btn--ghost {
   background-color: transparent;
   color: var(--interactive-default);
@@ -82,7 +77,7 @@
   background-color: var(--interactive-subtle-hover);
 }
 
-/* Neutral */
+/* Neutro */
 .btn--neutral {
   background-color: var(--bg-surface-2);
   color: var(--text-primary);
@@ -96,7 +91,7 @@
   background-color: var(--color-gray-300);
 }
 
-/* Danger */
+/* Destrutivo */
 .btn--danger {
   background-color: var(--color-error-600);
   color: #fff;
@@ -114,7 +109,7 @@
   box-shadow: var(--shadow-focus-error);
 }
 
-/* Danger Outline */
+/* Destrutivo contido */
 .btn--danger-outline {
   background-color: transparent;
   color: var(--color-error-600);
@@ -172,7 +167,7 @@
 
 .btn--block { width: 100%; }
 
-/* ---- Loading state ---- */
+/* ---- Carregamento ---- */
 
 .btn--loading {
   pointer-events: none;

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Tabela</h1>
+      <p class="docs-lead">Exibição de dados tabulares com suporte a ordenação e variantes visuais.</p>
+
+      <section class="docs-section">
+        <h2>Básica</h2>
+        <p>Tabela simples dentro do wrapper para scroll horizontal.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-4);">
+            <div class="table-wrapper">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Status</th>
+                    <th>Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ana Beatriz</td>
+                    <td>ana@email.com</td>
+                    <td><span class="badge badge--success">Ativo</span></td>
+                    <td>12/04/2026</td>
+                  </tr>
+                  <tr>
+                    <td>João Pedro</td>
+                    <td>joao@email.com</td>
+                    <td><span class="badge badge--warning">Pendente</span></td>
+                    <td>28/03/2026</td>
+                  </tr>
+                  <tr>
+                    <td>Carla Mendes</td>
+                    <td>carla@email.com</td>
+                    <td><span class="badge badge--error">Inativo</span></td>
+                    <td>15/01/2026</td>
+                  </tr>
+                  <tr>
+                    <td>Rafael Costa</td>
+                    <td>rafael@email.com</td>
+                    <td><span class="badge badge--success">Ativo</span></td>
+                    <td>01/04/2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="table-wrapper"&gt;
+  &lt;table class="table"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th&gt;E-mail&lt;/th&gt;
+        &lt;th&gt;Status&lt;/th&gt;
+        &lt;th&gt;Data&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Ana Beatriz&lt;/td&gt;
+        &lt;td&gt;ana@email.com&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge--success"&gt;Ativo&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;12/04/2026&lt;/td&gt;
+      &lt;/tr&gt;
+      ...
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Hover</h2>
+        <p>Linhas reagem ao cursor com <code class="docs-code">.table--hover</code>.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-4);">
+            <div class="table-wrapper">
+              <table class="table table--hover">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Status</th>
+                    <th>Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ana Beatriz</td>
+                    <td>ana@email.com</td>
+                    <td><span class="badge badge--success">Ativo</span></td>
+                    <td>12/04/2026</td>
+                  </tr>
+                  <tr>
+                    <td>João Pedro</td>
+                    <td>joao@email.com</td>
+                    <td><span class="badge badge--warning">Pendente</span></td>
+                    <td>28/03/2026</td>
+                  </tr>
+                  <tr>
+                    <td>Carla Mendes</td>
+                    <td>carla@email.com</td>
+                    <td><span class="badge badge--error">Inativo</span></td>
+                    <td>15/01/2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;table class="table table--hover"&gt;...&lt;/table&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Bordada</h2>
+        <p>Linhas com bordas entre células com <code class="docs-code">.table--bordered</code>.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-4);">
+            <div class="table-wrapper">
+              <table class="table table--bordered">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Status</th>
+                    <th>Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ana Beatriz</td>
+                    <td>ana@email.com</td>
+                    <td><span class="badge badge--success">Ativo</span></td>
+                    <td>12/04/2026</td>
+                  </tr>
+                  <tr>
+                    <td>João Pedro</td>
+                    <td>joao@email.com</td>
+                    <td><span class="badge badge--warning">Pendente</span></td>
+                    <td>28/03/2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;table class="table table--bordered"&gt;...&lt;/table&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Tamanhos</h2>
+        <p>Variantes compacta e espaçosa.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-5);">
+            <div class="table-wrapper">
+              <table class="table table--sm">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Status</th>
+                    <th>Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ana Beatriz</td>
+                    <td>ana@email.com</td>
+                    <td><span class="badge badge--success badge--sm">Ativo</span></td>
+                    <td>12/04/2026</td>
+                  </tr>
+                  <tr>
+                    <td>João Pedro</td>
+                    <td>joao@email.com</td>
+                    <td><span class="badge badge--warning badge--sm">Pendente</span></td>
+                    <td>28/03/2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-wrapper">
+              <table class="table table--lg">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Status</th>
+                    <th>Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ana Beatriz</td>
+                    <td>ana@email.com</td>
+                    <td><span class="badge badge--success">Ativo</span></td>
+                    <td>12/04/2026</td>
+                  </tr>
+                  <tr>
+                    <td>João Pedro</td>
+                    <td>joao@email.com</td>
+                    <td><span class="badge badge--warning">Pendente</span></td>
+                    <td>28/03/2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;table class="table table--sm"&gt;...&lt;/table&gt;
+&lt;table class="table table--lg"&gt;...&lt;/table&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Fixada</h2>
+        <p>Layout fixo com <code class="docs-code">.table--fixed</code> e <code class="docs-code">colgroup</code>.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:stretch;gap:var(--space-4);">
+            <div class="table-wrapper">
+              <table class="table table--fixed">
+                <colgroup>
+                  <col style="width:30%">
+                  <col style="width:40%">
+                  <col style="width:15%">
+                  <col style="width:15%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Status</th>
+                    <th>Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ana Beatriz</td>
+                    <td>ana@email.com</td>
+                    <td><span class="badge badge--success">Ativo</span></td>
+                    <td>12/04/2026</td>
+                  </tr>
+                  <tr>
+                    <td>João Pedro</td>
+                    <td>joao@email.com</td>
+                    <td><span class="badge badge--warning">Pendente</span></td>
+                    <td>28/03/2026</td>
+                  </tr>
+                  <tr>
+                    <td>Carla Mendes</td>
+                    <td>carla@email.com</td>
+                    <td><span class="badge badge--error">Inativo</span></td>
+                    <td>15/01/2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;table class="table table--fixed"&gt;
+  &lt;colgroup&gt;
+    &lt;col style="width:30%"&gt;
+    &lt;col style="width:40%"&gt;
+    &lt;col style="width:15%"&gt;
+    &lt;col style="width:15%"&gt;
+  &lt;/colgroup&gt;
+  ...
+&lt;/table&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

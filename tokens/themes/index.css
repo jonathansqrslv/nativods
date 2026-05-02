@@ -1,5 +1,7 @@
-/* Accent color themes — each overrides only --color-accent-* and --interactive-* tokens */
-@import "./purple.css" layer(ds-tokens);
-@import "./rose.css"   layer(ds-tokens);
-@import "./teal.css"   layer(ds-tokens);
-@import "./amber.css"  layer(ds-tokens);
+/* Temas de cor — sobrescrevem apenas --color-accent-* e --interactive-* */
+@import "./azul.css"    layer(brisa-tokens);
+@import "./cerrado.css" layer(brisa-tokens);
+@import "./ipe.css"     layer(brisa-tokens);
+@import "./roxo.css"    layer(brisa-tokens);
+@import "./terra.css"   layer(brisa-tokens);
+@import "./urucum.css"  layer(brisa-tokens);

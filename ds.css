@@ -1,27 +1,30 @@
 /* ==========================================================================
-   DS — Design System
-   CSS-first, framework-agnostic
+   Brisa — entrada de compatibilidade
+
+   Use brisa.css em projetos novos. Este arquivo permanece para que
+   integrações que importam ds.css continuem recebendo o mesmo sistema.
 
    Usage:
-     <link rel="stylesheet" href="ds.css">
+     <link rel="stylesheet" href="ds.css">     legado
+     <link rel="stylesheet" href="brisa.css">  preferencial
 
    Dark mode:
-     Automatic via prefers-color-scheme
-     Manual via data-theme="dark" | data-theme="light" on <html>
+     Automático via prefers-color-scheme
+     Manual: data-theme="dark" | data-theme="light" no <html>
 
    Structure:
-     tokens/     — CSS custom properties (colors, type, spacing, etc.)
-     base/       — Reset + global element defaults
-     layout/     — Container, grid, stack/flex primitives
-     components/ — UI components (button, card, modal, table, etc.)
-     utilities/  — Atomic helper classes
+     tokens/     — decisões de cor, tipo, espaço, raio, sombra e movimento
+     base/       — reset e defaults globais
+     layout/     — container, grid, stack e inline
+     components/ — controles, superfícies, navegação e feedback
+     utilities/  — classes atômicas
 
-   Cascade layers (lowest → highest specificity):
-     tokens → reset → base → layout → components → utilities
+   Cascade layers (menor -> maior prioridade):
+     brisa-tokens -> brisa-reset -> brisa-base ->
+     brisa-layout -> brisa-components -> brisa-utilities
    ========================================================================== */
 
-/* Declare layer order first — controls cascade priority */
-@layer ds-tokens, ds-reset, ds-base, ds-layout, ds-components, ds-utilities;
+@layer brisa-tokens, brisa-reset, brisa-base, brisa-layout, brisa-components, brisa-utilities;
 
 @import "./tokens/index.css";
 @import "./tokens/themes/index.css";

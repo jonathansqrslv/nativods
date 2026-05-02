@@ -1,5 +1,5 @@
 /**
- * DS Navbar
+ * Brisa Navbar
  *
  * Handles:
  *   - Mobile nav toggle (hamburger)

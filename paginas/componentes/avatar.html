@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avatar — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Avatar</h1>
+      <p class="docs-lead">Representação visual de usuários com iniciais, imagens ou ícones.</p>
+
+      <section class="docs-section">
+        <h2>Tamanhos</h2>
+        <p>Seis tamanhos para qualquer densidade de interface.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <div class="avatar avatar--xs">AB</div>
+            <div class="avatar avatar--sm">AB</div>
+            <div class="avatar">AB</div>
+            <div class="avatar avatar--lg">AB</div>
+            <div class="avatar avatar--xl">AB</div>
+            <div class="avatar avatar--2xl">AB</div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="avatar avatar--xs"&gt;AB&lt;/div&gt;
+&lt;div class="avatar avatar--sm"&gt;AB&lt;/div&gt;
+&lt;div class="avatar"&gt;AB&lt;/div&gt;
+&lt;div class="avatar avatar--lg"&gt;AB&lt;/div&gt;
+&lt;div class="avatar avatar--xl"&gt;AB&lt;/div&gt;
+&lt;div class="avatar avatar--2xl"&gt;AB&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Cores</h2>
+        <p>Seis temas de cor inspirados na natureza brasileira.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <div class="avatar avatar--terra">TR</div>
+            <div class="avatar avatar--mata">MT</div>
+            <div class="avatar avatar--ipe">IP</div>
+            <div class="avatar avatar--urucum">UR</div>
+            <div class="avatar avatar--ceu">CE</div>
+            <div class="avatar avatar--roxo">RX</div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="avatar avatar--terra"&gt;TR&lt;/div&gt;
+&lt;div class="avatar avatar--mata"&gt;MT&lt;/div&gt;
+&lt;div class="avatar avatar--ipe"&gt;IP&lt;/div&gt;
+&lt;div class="avatar avatar--urucum"&gt;UR&lt;/div&gt;
+&lt;div class="avatar avatar--ceu"&gt;CE&lt;/div&gt;
+&lt;div class="avatar avatar--roxo"&gt;RX&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Com status</h2>
+        <p>Indicadores de presença com <code class="docs-code">.avatar__status</code>.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <span class="avatar-wrapper">
+              <div class="avatar">AB</div>
+              <span class="avatar__status avatar__status--online"></span>
+            </span>
+            <span class="avatar-wrapper">
+              <div class="avatar">JP</div>
+              <span class="avatar__status avatar__status--busy"></span>
+            </span>
+            <span class="avatar-wrapper">
+              <div class="avatar">CM</div>
+              <span class="avatar__status avatar__status--away"></span>
+            </span>
+            <span class="avatar-wrapper">
+              <div class="avatar">RC</div>
+              <span class="avatar__status avatar__status--offline"></span>
+            </span>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;span class="avatar-wrapper"&gt;
+  &lt;div class="avatar"&gt;AB&lt;/div&gt;
+  &lt;span class="avatar__status avatar__status--online"&gt;&lt;/span&gt;
+&lt;/span&gt;
+&lt;span class="avatar-wrapper"&gt;
+  &lt;div class="avatar"&gt;JP&lt;/div&gt;
+  &lt;span class="avatar__status avatar__status--busy"&gt;&lt;/span&gt;
+&lt;/span&gt;
+&lt;span class="avatar-wrapper"&gt;
+  &lt;div class="avatar"&gt;CM&lt;/div&gt;
+  &lt;span class="avatar__status avatar__status--away"&gt;&lt;/span&gt;
+&lt;/span&gt;
+&lt;span class="avatar-wrapper"&gt;
+  &lt;div class="avatar"&gt;RC&lt;/div&gt;
+  &lt;span class="avatar__status avatar__status--offline"&gt;&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Grupo</h2>
+        <p>Avatares agrupados com sobreposição e indicador de excedente.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <div class="avatar-group">
+              <div class="avatar avatar--sm avatar--terra">AB</div>
+              <div class="avatar avatar--sm avatar--mata">JP</div>
+              <div class="avatar avatar--sm avatar--ipe">CM</div>
+              <div class="avatar avatar--sm avatar--urucum">RC</div>
+              <div class="avatar avatar--sm">+3</div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="avatar-group"&gt;
+  &lt;div class="avatar avatar--sm avatar--terra"&gt;AB&lt;/div&gt;
+  &lt;div class="avatar avatar--sm avatar--mata"&gt;JP&lt;/div&gt;
+  &lt;div class="avatar avatar--sm avatar--ipe"&gt;CM&lt;/div&gt;
+  &lt;div class="avatar avatar--sm avatar--urucum"&gt;RC&lt;/div&gt;
+  &lt;div class="avatar avatar--sm"&gt;+3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

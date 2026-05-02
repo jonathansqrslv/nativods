@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Input</h1>
+      <p class="docs-lead">Campos de entrada para formulários. Estilo underline com feedback visual claro.</p>
+
+      <section class="docs-section">
+        <h2>Básico</h2>
+        <p>Inputs com rótulo, placeholder e dica em um bloco <code class="docs-code">.field</code>.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="field">
+              <label class="field__label" for="inp-nome">Nome completo</label>
+              <input type="text" id="inp-nome" class="input" placeholder="Seu nome">
+            </div>
+            <div class="field">
+              <label class="field__label" for="inp-email">E-mail</label>
+              <input type="email" id="inp-email" class="input" placeholder="ana@email.com">
+            </div>
+            <div class="field">
+              <label class="field__label" for="inp-senha">Senha</label>
+              <input type="password" id="inp-senha" class="input" placeholder="Mínimo 8 caracteres">
+              <span class="field__hint">Deve conter letras e números.</span>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="field"&gt;
+  &lt;label class="field__label" for="inp-nome"&gt;Nome completo&lt;/label&gt;
+  &lt;input type="text" id="inp-nome" class="input" placeholder="Seu nome"&gt;
+&lt;/div&gt;
+
+&lt;div class="field"&gt;
+  &lt;label class="field__label" for="inp-email"&gt;E-mail&lt;/label&gt;
+  &lt;input type="email" id="inp-email" class="input" placeholder="ana@email.com"&gt;
+&lt;/div&gt;
+
+&lt;div class="field"&gt;
+  &lt;label class="field__label" for="inp-senha"&gt;Senha&lt;/label&gt;
+  &lt;input type="password" id="inp-senha" class="input" placeholder="Mínimo 8 caracteres"&gt;
+  &lt;span class="field__hint"&gt;Deve conter letras e números.&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Tamanhos</h2>
+        <p>Três densidades: <code class="docs-code">.input--sm</code>, padrão e <code class="docs-code">.input--lg</code>.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="field">
+              <label class="field__label" for="inp-sm">Pequeno</label>
+              <input type="text" id="inp-sm" class="input input--sm" placeholder="Input sm">
+            </div>
+            <div class="field">
+              <label class="field__label" for="inp-md">Padrão</label>
+              <input type="text" id="inp-md" class="input" placeholder="Input padrão">
+            </div>
+            <div class="field">
+              <label class="field__label" for="inp-lg">Grande</label>
+              <input type="text" id="inp-lg" class="input input--lg" placeholder="Input lg">
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;input class="input input--sm" placeholder="Input sm"&gt;
+&lt;input class="input" placeholder="Input padrão"&gt;
+&lt;input class="input input--lg" placeholder="Input lg"&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Estados</h2>
+        <p>Erro, sucesso, desabilitado e somente leitura.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="field">
+              <label class="field__label field__label--required" for="inp-erro">E-mail</label>
+              <input type="email" id="inp-erro" class="input input--error" value="email-invalido" placeholder="Digite seu e-mail">
+              <span class="field__error">Informe um e-mail válido.</span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="inp-ok">Nome</label>
+              <input type="text" id="inp-ok" class="input input--success" value="Ana Silva" placeholder="Seu nome">
+            </div>
+            <div class="field">
+              <label class="field__label" for="inp-disabled">Desabilitado</label>
+              <input type="text" id="inp-disabled" class="input" value="Não editável" disabled>
+            </div>
+            <div class="field">
+              <label class="field__label" for="inp-readonly">Somente leitura</label>
+              <input type="text" id="inp-readonly" class="input" value="Apenas leitura" readonly>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;input class="input input--error" value="email-invalido"&gt;
+&lt;span class="field__error"&gt;Informe um e-mail válido.&lt;/span&gt;
+
+&lt;input class="input input--success" value="Ana Silva"&gt;
+
+&lt;input class="input" value="Não editável" disabled&gt;
+
+&lt;input class="input" value="Apenas leitura" readonly&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Com ícone</h2>
+        <p>Envolva o input em <code class="docs-code">.input-wrapper</code> com ícones antes ou depois.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="field">
+              <label class="field__label" for="inp-busca">Buscar</label>
+              <div class="input-wrapper">
+                <svg class="input-addon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" id="inp-busca" class="input" placeholder="Pesquisar...">
+              </div>
+            </div>
+            <div class="field">
+              <label class="field__label" for="inp-senhav">Senha com visibilidade</label>
+              <div class="input-wrapper">
+                <input type="password" id="inp-senhav" class="input" placeholder="Digite sua senha">
+                <button class="input-addon" aria-label="Mostrar senha" style="background:none;border:none;cursor:pointer;padding:0;display:flex;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="input-wrapper"&gt;
+  &lt;svg class="input-addon" ...&gt;&lt;!-- ícone de busca --&gt;&lt;/svg&gt;
+  &lt;input type="text" class="input" placeholder="Pesquisar..."&gt;
+&lt;/div&gt;
+
+&lt;div class="input-wrapper"&gt;
+  &lt;input type="password" class="input" placeholder="Digite sua senha"&gt;
+  &lt;button class="input-addon" aria-label="Mostrar senha"&gt;
+    &lt;svg ...&gt;&lt;!-- ícone olho --&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Textarea</h2>
+        <p>A classe <code class="docs-code">.input</code> também funciona em textareas.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="field">
+              <label class="field__label" for="inp-msg">Mensagem</label>
+              <textarea id="inp-msg" class="input" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+              <span class="field__hint">Máximo 500 caracteres.</span>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="field"&gt;
+  &lt;label class="field__label" for="inp-msg"&gt;Mensagem&lt;/label&gt;
+  &lt;textarea id="inp-msg" class="input" rows="4" placeholder="Escreva sua mensagem..."&gt;&lt;/textarea&gt;
+  &lt;span class="field__hint"&gt;Máximo 500 caracteres.&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Select</h2>
+        <p>A classe <code class="docs-code">.input</code> também se aplica a selects nativos.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="field">
+              <label class="field__label" for="inp-select">Estado</label>
+              <select id="inp-select" class="input">
+                <option value="" disabled selected>Selecione um estado</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="ba">Bahia</option>
+              </select>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="field"&gt;
+  &lt;label class="field__label" for="inp-select"&gt;Estado&lt;/label&gt;
+  &lt;select id="inp-select" class="input"&gt;
+    &lt;option value="" disabled selected&gt;Selecione um estado&lt;/option&gt;
+    &lt;option value="sp"&gt;São Paulo&lt;/option&gt;
+    &lt;option value="rj"&gt;Rio de Janeiro&lt;/option&gt;
+    &lt;option value="mg"&gt;Minas Gerais&lt;/option&gt;
+    &lt;option value="ba"&gt;Bahia&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Addon</h2>
+        <p>Combine input com botões de ação adjacentes.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="field">
+              <label class="field__label" for="inp-addon">URL do site</label>
+              <div class="input-wrapper">
+                <input type="text" id="inp-addon" class="input" placeholder="https://">
+                <button class="input-addon btn btn--solid btn--sm" style="white-space:nowrap;">Verificar</button>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="input-wrapper"&gt;
+  &lt;input type="text" class="input" placeholder="https://"&gt;
+  &lt;button class="input-addon btn btn--solid btn--sm"&gt;Verificar&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

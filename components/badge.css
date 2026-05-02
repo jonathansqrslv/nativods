@@ -11,7 +11,6 @@
   font-weight: var(--weight-medium);
   line-height: var(--leading-none);
   white-space: nowrap;
-  border-radius: var(--radius-full);
   border: 1px solid transparent;
   vertical-align: middle;
 }
@@ -54,11 +53,11 @@
   border-color: var(--feedback-info-border);
 }
 
-/* Solid variants */
+/* Variantes preenchidas */
 .badge--solid-neutral  { background-color: var(--color-gray-600);   color: #fff; }
 .badge--solid-primary  { background-color: var(--interactive-default); color: #fff; }
 .badge--solid-success  { background-color: var(--color-success-600); color: #fff; }
-.badge--solid-warning  { background-color: var(--color-warning-500); color: #fff; }
+.badge--solid-warning  { background-color: var(--color-warning-500); color: var(--color-warning-950); }
 .badge--solid-error    { background-color: var(--color-error-600);   color: #fff; }
 .badge--solid-info     { background-color: var(--color-info-600);    color: #fff; }
 
@@ -72,19 +71,6 @@
 .badge--lg {
   font-size: var(--text-sm);
   padding: 0.3em 0.75em;
-  border-radius: var(--radius-full);
-}
-
-/* --- Dot badge --- */
-
-.badge--dot::before {
-  content: "";
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  border-radius: var(--radius-full);
-  background-color: currentColor;
-  flex-shrink: 0;
 }
 
 /* --- Count/notification badge (positional) --- */
@@ -102,7 +88,6 @@
   height: 1.25rem;
   padding: 0 0.35em;
   font-size: 0.65rem;
-  border-radius: var(--radius-full);
   background-color: var(--color-error-600);
   color: #fff;
   border: 2px solid var(--bg-page);

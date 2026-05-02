@@ -1,5 +1,5 @@
 /**
- * DS Dropdown
+ * Brisa Dropdown
  *
  * Markup contract:
  *   <div class="dropdown" data-dropdown>

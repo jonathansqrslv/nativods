@@ -1,6 +1,11 @@
 /* ==========================================================================
    SPACING TOKENS
-   4px base unit
+   4px base unit.
+
+   Brisa treats space as rhythm, not leftover area:
+   - control space: 1-3 for dense controls and inline relationships
+   - surface space: 4-8 for cards, alerts, popovers and modal content
+   - section space: 10+ for documentation, pages and editorial breaks
    ========================================================================== */
 
 :root {

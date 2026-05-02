@@ -1,0 +1,45 @@
+/* ==========================================================================
+
+   BRISA — Design System Brasileiro
+   Um sistema silencioso, mas vivo.
+
+   Criamos interfaces que não gritam.
+   Elas respiram.
+
+   Brasilidade, aqui, não é ornamento.
+   É ritmo, calor e presença.
+
+   O sistema não impõe identidade.
+   Ele cria espaço para que ela apareça.
+
+   ·
+
+   Uso:
+     <link rel="stylesheet" href="brisa.css">
+
+   Dark mode:
+     Automático via prefers-color-scheme
+     Manual: data-theme="dark" | data-theme="light" no <html>
+
+   Temas de cor:
+     data-accent="azul"    — azul editorial
+     data-accent="cerrado" — verde seco
+     data-accent="ipe"     — luz amarela
+     data-accent="terra"   — argila e cerâmica
+     data-accent="urucum"  — calor gráfico
+     data-accent="roxo"    — acento secundário
+
+   Cascade layers (menor → maior prioridade):
+     brisa-tokens → brisa-reset → brisa-base →
+     brisa-layout → brisa-components → brisa-utilities
+
+   ========================================================================== */
+
+@layer brisa-tokens, brisa-reset, brisa-base, brisa-layout, brisa-components, brisa-utilities;
+
+@import "./tokens/index.css";
+@import "./tokens/themes/index.css";
+@import "./base/index.css";
+@import "./layout/index.css";
+@import "./components/index.css";
+@import "./utilities/index.css";

@@ -1,13 +1,13 @@
 /**
- * DS Toast
+ * Brisa Toast
  *
  * API:
- *   DS.toast.show({ message, title?, type?, duration?, closable? })
- *   DS.toast.success(message, options?)
- *   DS.toast.error(message, options?)
- *   DS.toast.warning(message, options?)
- *   DS.toast.info(message, options?)
- *   DS.toast.promise(promise, { loading, success, error })
+ *   Brisa.toast.show({ message, title?, type?, duration?, closable? })
+ *   Brisa.toast.success(message, options?)
+ *   Brisa.toast.error(message, options?)
+ *   Brisa.toast.warning(message, options?)
+ *   Brisa.toast.info(message, options?)
+ *   Brisa.toast.promise(promise, { loading, success, error })
  *
  * Options:
  *   message   string            — body text (required)

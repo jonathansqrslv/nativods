@@ -4,37 +4,36 @@
 
 :root {
   --shadow-none: none;
-  --shadow-xs:   0 1px 2px rgba(0, 0, 0, 0.06);
-  --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
-  --shadow-md:   0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
-  --shadow-lg:   0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl:   0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-2xl:  0 25px 50px -12px rgba(0, 0, 0, 0.18);
-  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-xs:   0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md:   0 2px 6px rgba(0, 0, 0, 0.06);
+  --shadow-lg:   0 4px 12px rgba(0, 0, 0, 0.07);
+  --shadow-xl:   0 8px 20px rgba(0, 0, 0, 0.08);
+  --shadow-2xl:  0 12px 32px rgba(0, 0, 0, 0.1);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.04);
 
-  --shadow-focus: 0 0 0 3px rgba(59, 110, 243, 0.35);
-  --shadow-focus-error: 0 0 0 3px rgba(244, 63, 94, 0.35);
-}
-
-[data-theme="dark"],
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --shadow-xs:   0 1px 2px rgba(0, 0, 0, 0.2);
-    --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
-    --shadow-md:   0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-    --shadow-lg:   0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
-    --shadow-xl:   0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.15);
-    --shadow-2xl:  0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
+  --shadow-focus: 0 0 0 2px var(--interactive-default);
+  --shadow-focus-error: 0 0 0 2px var(--color-error-600);
 }
 
 [data-theme="dark"] {
-  --shadow-xs:   0 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow-md:   0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  --shadow-lg:   0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
-  --shadow-xl:   0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.15);
-  --shadow-2xl:  0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-xs:   0 1px 2px rgba(0, 0, 0, 0.18);
+  --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.24);
+  --shadow-md:   0 2px 6px rgba(0, 0, 0, 0.28);
+  --shadow-lg:   0 4px 12px rgba(0, 0, 0, 0.32);
+  --shadow-xl:   0 8px 20px rgba(0, 0, 0, 0.36);
+  --shadow-2xl:  0 12px 32px rgba(0, 0, 0, 0.44);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.16);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --shadow-xs:   0 1px 2px rgba(0, 0, 0, 0.18);
+    --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.24);
+    --shadow-md:   0 2px 6px rgba(0, 0, 0, 0.28);
+    --shadow-lg:   0 4px 12px rgba(0, 0, 0, 0.32);
+    --shadow-xl:   0 8px 20px rgba(0, 0, 0, 0.36);
+    --shadow-2xl:  0 12px 32px rgba(0, 0, 0, 0.44);
+    --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.16);
+  }
 }

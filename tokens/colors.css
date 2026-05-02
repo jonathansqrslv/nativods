@@ -1,105 +1,162 @@
 /* ==========================================================================
-   COLOR TOKENS
-   Neutral-first palette with semantic aliases and dark mode support
+   BRISA — COLOR TOKENS
+   Paleta natural. Tons que respiram, não gritam.
    ========================================================================== */
 
 :root {
-  /* --- Gray Scale --- */
+  /* --- Areia — neutro quente
+     Base de superfícies, bordas e texto.
+  */
   --color-gray-0:   #ffffff;
-  --color-gray-50:  #f9f9fb;
-  --color-gray-100: #f2f2f5;
-  --color-gray-200: #e4e4ea;
-  --color-gray-300: #d0d0d9;
-  --color-gray-400: #b0b0be;
-  --color-gray-500: #8e8e9e;
-  --color-gray-600: #6c6c7e;
-  --color-gray-700: #4e4e5e;
-  --color-gray-800: #333342;
-  --color-gray-900: #1e1e2a;
-  --color-gray-950: #111118;
+  --color-gray-50:  #faf9f7;
+  --color-gray-100: #f4f2ee;
+  --color-gray-200: #e8e3dc;
+  --color-gray-300: #d4ccc2;
+  --color-gray-400: #b3a99c;
+  --color-gray-500: #8c8278;
+  --color-gray-600: #6b6158;
+  --color-gray-700: #4e4640;
+  --color-gray-800: #332d28;
+  --color-gray-900: #1e1916;
+  --color-gray-950: #120e0c;
 
-  /* --- Accent (Blue) --- */
-  --color-accent-50:  #eff4ff;
-  --color-accent-100: #dbe8fe;
-  --color-accent-200: #bfd4fd;
-  --color-accent-300: #93b7fb;
-  --color-accent-400: #6090f8;
-  --color-accent-500: #3b6ef3;
-  --color-accent-600: #2751e8;
-  --color-accent-700: #1e3fd5;
-  --color-accent-800: #1f35ac;
-  --color-accent-900: #1f3188;
-  --color-accent-950: #172054;
+  /* --- Mata — acento padrão
+     Verde profundo como eixo gráfico do sistema.
+  */
+  --color-accent-50:  #edf8e8;
+  --color-accent-100: #d8efc9;
+  --color-accent-200: #b7df98;
+  --color-accent-300: #91ca63;
+  --color-accent-400: #70b238;
+  --color-accent-500: #4f991f;
+  --color-accent-600: #347a12;
+  --color-accent-700: #28640f;
+  --color-accent-800: #204f10;
+  --color-accent-900: #1a4010;
+  --color-accent-950: #0b2407;
 
-  /* --- Success (Green) --- */
-  --color-success-50:  #f0fdf4;
-  --color-success-100: #dcfce7;
-  --color-success-200: #bbf7d0;
-  --color-success-300: #86efac;
-  --color-success-400: #4ade80;
-  --color-success-500: #22c55e;
-  --color-success-600: #16a34a;
-  --color-success-700: #15803d;
-  --color-success-800: #166534;
-  --color-success-900: #14532d;
-  --color-success-950: #052e16;
+  /* --- Mata — sucesso
+     Verde de confirmação, usado com baixa saturação.
+  */
+  --color-success-50:  #edf8e8;
+  --color-success-100: #d8efc9;
+  --color-success-200: #b7df98;
+  --color-success-300: #91ca63;
+  --color-success-400: #70b238;
+  --color-success-500: #4f991f;
+  --color-success-600: #347a12;
+  --color-success-700: #28640f;
+  --color-success-800: #204f10;
+  --color-success-900: #1a4010;
+  --color-success-950: #0b2407;
 
-  /* --- Warning (Amber) --- */
-  --color-warning-50:  #fffbeb;
-  --color-warning-100: #fef3c7;
-  --color-warning-200: #fde68a;
-  --color-warning-300: #fcd34d;
-  --color-warning-400: #fbbf24;
-  --color-warning-500: #f59e0b;
-  --color-warning-600: #d97706;
-  --color-warning-700: #b45309;
-  --color-warning-800: #92400e;
-  --color-warning-900: #78350f;
-  --color-warning-950: #451a03;
+  /* --- Ipê — atenção
+     Amarelo quente para avisos sem estridência.
+  */
+  --color-warning-50:  #fffbe5;
+  --color-warning-100: #fff4b8;
+  --color-warning-200: #ffe873;
+  --color-warning-300: #ffd92f;
+  --color-warning-400: #f7c600;
+  --color-warning-500: #d9a900;
+  --color-warning-600: #a87b00;
+  --color-warning-700: #805b00;
+  --color-warning-800: #624500;
+  --color-warning-900: #4a3400;
+  --color-warning-950: #2b1d00;
 
-  /* --- Error (Red) --- */
-  --color-error-50:  #fff1f2;
-  --color-error-100: #ffe4e6;
-  --color-error-200: #fecdd3;
-  --color-error-300: #fda4af;
-  --color-error-400: #fb7185;
-  --color-error-500: #f43f5e;
-  --color-error-600: #e11d48;
-  --color-error-700: #be123c;
-  --color-error-800: #9f1239;
-  --color-error-900: #881337;
-  --color-error-950: #4c0519;
+  /* --- Urucum — erro
+     Vermelho seco para falhas e ações destrutivas.
+  */
+  --color-error-50:  #fff3ed;
+  --color-error-100: #ffe1d2;
+  --color-error-200: #ffc0a4;
+  --color-error-300: #ff9870;
+  --color-error-400: #fb6e3b;
+  --color-error-500: #ec4f1a;
+  --color-error-600: #c83b10;
+  --color-error-700: #9f2e10;
+  --color-error-800: #7c2712;
+  --color-error-900: #642214;
+  --color-error-950: #361007;
 
-  /* --- Info (Cyan) --- */
-  --color-info-50:  #ecfeff;
-  --color-info-100: #cffafe;
-  --color-info-200: #a5f3fc;
-  --color-info-300: #67e8f9;
-  --color-info-400: #22d3ee;
-  --color-info-500: #06b6d4;
-  --color-info-600: #0891b2;
-  --color-info-700: #0e7490;
-  --color-info-800: #155e75;
-  --color-info-900: #164e63;
-  --color-info-950: #083344;
+  /* --- Céu — informação
+     Azul limpo, usado em estados informativos.
+  */
+  --color-info-50:  #eef8ff;
+  --color-info-100: #d9efff;
+  --color-info-200: #baddff;
+  --color-info-300: #8bc5ff;
+  --color-info-400: #52a6f5;
+  --color-info-500: #1f84df;
+  --color-info-600: #0968bf;
+  --color-info-700: #07529a;
+  --color-info-800: #0a467e;
+  --color-info-900: #0e3b68;
+  --color-info-950: #092642;
+
+  /* --- Terra — apoio quente
+     Argila e cerâmica para contraste editorial.
+  */
+  --color-terra-50:  #fdf6ee;
+  --color-terra-100: #faebda;
+  --color-terra-200: #f4d3b3;
+  --color-terra-300: #ebb483;
+  --color-terra-400: #e08d4e;
+  --color-terra-500: #d47030;
+  --color-terra-600: #b85a1e;
+  --color-terra-700: #97461b;
+  --color-terra-800: #7a381a;
+  --color-terra-900: #642e18;
+  --color-terra-950: #37160a;
+
+  /* Aliases de identidade.
+     Mantêm a API semântica estável e deixam a voz Brisa disponível
+     para documentação, demos e extensões de produto.
+  */
+  --color-areia-0:   var(--color-gray-0);
+  --color-areia-50:  var(--color-gray-50);
+  --color-areia-100: var(--color-gray-100);
+  --color-areia-200: var(--color-gray-200);
+  --color-areia-300: var(--color-gray-300);
+  --color-areia-400: var(--color-gray-400);
+  --color-areia-500: var(--color-gray-500);
+  --color-areia-600: var(--color-gray-600);
+  --color-areia-700: var(--color-gray-700);
+  --color-areia-800: var(--color-gray-800);
+  --color-areia-900: var(--color-gray-900);
+  --color-areia-950: var(--color-gray-950);
+
+  --color-mata-50:  #edf8e8;
+  --color-mata-100: #d8efc9;
+  --color-mata-200: #b7df98;
+  --color-mata-300: #91ca63;
+  --color-mata-400: #70b238;
+  --color-mata-500: #4f991f;
+  --color-mata-600: #347a12;
+  --color-mata-700: #28640f;
+  --color-mata-800: #204f10;
+  --color-mata-900: #1a4010;
+  --color-mata-950: #0b2407;
+
+  --color-ipe-500: var(--color-warning-500);
+  --color-urucum-500: var(--color-error-500);
+  --color-ceu-500: var(--color-info-500);
 
   /* ===================================================================
-     SEMANTIC ALIASES — light mode
+     ALIASES SEMÂNTICOS — modo claro
      =================================================================== */
 
-  /* Backgrounds */
   --bg-page:         var(--color-gray-50);
   --bg-surface:      var(--color-gray-0);
   --bg-surface-2:    var(--color-gray-100);
   --bg-surface-3:    var(--color-gray-200);
-  --bg-overlay:      rgba(0, 0, 0, 0.48);
+  --bg-overlay:      rgba(30, 25, 22, 0.5);
 
-  /* Borders */
   --border-default:  var(--color-gray-200);
   --border-strong:   var(--color-gray-300);
   --border-focus:    var(--color-accent-500);
 
-  /* Text */
   --text-primary:    var(--color-gray-900);
   --text-secondary:  var(--color-gray-600);
   --text-tertiary:   var(--color-gray-500);
@@ -107,93 +164,44 @@
   --text-inverse:    var(--color-gray-0);
   --text-on-accent:  var(--color-gray-0);
 
-  /* Interactive */
-  --interactive-default:   var(--color-accent-600);
-  --interactive-hover:     var(--color-accent-700);
-  --interactive-active:    var(--color-accent-800);
-  --interactive-subtle:    var(--color-accent-50);
+  --interactive-default:      var(--color-accent-700);
+  --interactive-hover:        var(--color-accent-800);
+  --interactive-active:       var(--color-accent-900);
+  --interactive-subtle:       var(--color-accent-50);
   --interactive-subtle-hover: var(--color-accent-100);
 
-  /* Feedback */
-  --feedback-success-bg:   var(--color-success-50);
-  --feedback-success-text: var(--color-success-800);
+  --feedback-success-bg:     var(--color-success-50);
+  --feedback-success-text:   var(--color-success-800);
   --feedback-success-border: var(--color-success-200);
-  --feedback-success-icon: var(--color-success-600);
+  --feedback-success-icon:   var(--color-success-600);
 
-  --feedback-warning-bg:   var(--color-warning-50);
-  --feedback-warning-text: var(--color-warning-900);
+  --feedback-warning-bg:     var(--color-warning-50);
+  --feedback-warning-text:   var(--color-warning-900);
   --feedback-warning-border: var(--color-warning-200);
-  --feedback-warning-icon: var(--color-warning-600);
+  --feedback-warning-icon:   var(--color-warning-600);
 
-  --feedback-error-bg:     var(--color-error-50);
-  --feedback-error-text:   var(--color-error-800);
-  --feedback-error-border: var(--color-error-200);
-  --feedback-error-icon:   var(--color-error-600);
+  --feedback-error-bg:       var(--color-error-50);
+  --feedback-error-text:     var(--color-error-800);
+  --feedback-error-border:   var(--color-error-200);
+  --feedback-error-icon:     var(--color-error-600);
 
-  --feedback-info-bg:      var(--color-info-50);
-  --feedback-info-text:    var(--color-info-800);
-  --feedback-info-border:  var(--color-info-200);
-  --feedback-info-icon:    var(--color-info-600);
+  --feedback-info-bg:        var(--color-info-50);
+  --feedback-info-text:      var(--color-info-800);
+  --feedback-info-border:    var(--color-info-200);
+  --feedback-info-icon:      var(--color-info-600);
 }
 
 /* ===================================================================
-   DARK MODE — via attribute (explicit) or media query (system)
+   MODO ESCURO
+   Como a noite do interior: quente, presente, sem violência.
    =================================================================== */
-
-[data-theme="dark"],
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg-page:         var(--color-gray-950);
-    --bg-surface:      var(--color-gray-900);
-    --bg-surface-2:    var(--color-gray-800);
-    --bg-surface-3:    var(--color-gray-700);
-    --bg-overlay:      rgba(0, 0, 0, 0.64);
-
-    --border-default:  var(--color-gray-800);
-    --border-strong:   var(--color-gray-700);
-    --border-focus:    var(--color-accent-400);
-
-    --text-primary:    var(--color-gray-50);
-    --text-secondary:  var(--color-gray-400);
-    --text-tertiary:   var(--color-gray-500);
-    --text-disabled:   var(--color-gray-700);
-    --text-inverse:    var(--color-gray-900);
-    --text-on-accent:  var(--color-gray-0);
-
-    --interactive-default:     var(--color-accent-500);
-    --interactive-hover:       var(--color-accent-400);
-    --interactive-active:      var(--color-accent-300);
-    --interactive-subtle:      rgba(59, 110, 243, 0.12);
-    --interactive-subtle-hover: rgba(59, 110, 243, 0.2);
-
-    --feedback-success-bg:     rgba(34, 197, 94, 0.1);
-    --feedback-success-text:   var(--color-success-300);
-    --feedback-success-border: rgba(34, 197, 94, 0.25);
-    --feedback-success-icon:   var(--color-success-400);
-
-    --feedback-warning-bg:     rgba(245, 158, 11, 0.1);
-    --feedback-warning-text:   var(--color-warning-300);
-    --feedback-warning-border: rgba(245, 158, 11, 0.25);
-    --feedback-warning-icon:   var(--color-warning-400);
-
-    --feedback-error-bg:       rgba(244, 63, 94, 0.1);
-    --feedback-error-text:     var(--color-error-300);
-    --feedback-error-border:   rgba(244, 63, 94, 0.25);
-    --feedback-error-icon:     var(--color-error-400);
-
-    --feedback-info-bg:        rgba(6, 182, 212, 0.1);
-    --feedback-info-text:      var(--color-info-300);
-    --feedback-info-border:    rgba(6, 182, 212, 0.25);
-    --feedback-info-icon:      var(--color-info-400);
-  }
-}
 
 [data-theme="dark"] {
   --bg-page:         var(--color-gray-950);
   --bg-surface:      var(--color-gray-900);
   --bg-surface-2:    var(--color-gray-800);
   --bg-surface-3:    var(--color-gray-700);
-  --bg-overlay:      rgba(0, 0, 0, 0.64);
+  --bg-overlay:      rgba(0, 0, 0, 0.65);
 
   --border-default:  var(--color-gray-800);
   --border-strong:   var(--color-gray-700);
@@ -206,29 +214,77 @@
   --text-inverse:    var(--color-gray-900);
   --text-on-accent:  var(--color-gray-0);
 
-  --interactive-default:     var(--color-accent-500);
-  --interactive-hover:       var(--color-accent-400);
-  --interactive-active:      var(--color-accent-300);
-  --interactive-subtle:      rgba(59, 110, 243, 0.12);
-  --interactive-subtle-hover: rgba(59, 110, 243, 0.2);
+  --interactive-default:      var(--color-accent-400);
+  --interactive-hover:        var(--color-accent-300);
+  --interactive-active:       var(--color-accent-200);
+  --interactive-subtle:       rgba(79, 153, 31, 0.12);
+  --interactive-subtle-hover: rgba(79, 153, 31, 0.2);
+  --border-focus:             var(--color-accent-400);
 
-  --feedback-success-bg:     rgba(34, 197, 94, 0.1);
+  --feedback-success-bg:     rgba(79, 153, 31, 0.1);
   --feedback-success-text:   var(--color-success-300);
-  --feedback-success-border: rgba(34, 197, 94, 0.25);
+  --feedback-success-border: rgba(79, 153, 31, 0.25);
   --feedback-success-icon:   var(--color-success-400);
 
-  --feedback-warning-bg:     rgba(245, 158, 11, 0.1);
+  --feedback-warning-bg:     rgba(217, 169, 0, 0.1);
   --feedback-warning-text:   var(--color-warning-300);
-  --feedback-warning-border: rgba(245, 158, 11, 0.25);
+  --feedback-warning-border: rgba(217, 169, 0, 0.25);
   --feedback-warning-icon:   var(--color-warning-400);
 
-  --feedback-error-bg:       rgba(244, 63, 94, 0.1);
+  --feedback-error-bg:       rgba(236, 79, 26, 0.1);
   --feedback-error-text:     var(--color-error-300);
-  --feedback-error-border:   rgba(244, 63, 94, 0.25);
+  --feedback-error-border:   rgba(236, 79, 26, 0.25);
   --feedback-error-icon:     var(--color-error-400);
 
-  --feedback-info-bg:        rgba(6, 182, 212, 0.1);
+  --feedback-info-bg:        rgba(31, 132, 223, 0.1);
   --feedback-info-text:      var(--color-info-300);
-  --feedback-info-border:    rgba(6, 182, 212, 0.25);
+  --feedback-info-border:    rgba(31, 132, 223, 0.25);
   --feedback-info-icon:      var(--color-info-400);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-page:         var(--color-gray-950);
+    --bg-surface:      var(--color-gray-900);
+    --bg-surface-2:    var(--color-gray-800);
+    --bg-surface-3:    var(--color-gray-700);
+    --bg-overlay:      rgba(0, 0, 0, 0.65);
+
+    --border-default:  var(--color-gray-800);
+    --border-strong:   var(--color-gray-700);
+    --border-focus:    var(--color-accent-400);
+
+    --text-primary:    var(--color-gray-50);
+    --text-secondary:  var(--color-gray-400);
+    --text-tertiary:   var(--color-gray-500);
+    --text-disabled:   var(--color-gray-700);
+    --text-inverse:    var(--color-gray-900);
+    --text-on-accent:  var(--color-gray-0);
+
+    --interactive-default:      var(--color-accent-400);
+    --interactive-hover:        var(--color-accent-300);
+    --interactive-active:       var(--color-accent-200);
+    --interactive-subtle:       rgba(79, 153, 31, 0.12);
+    --interactive-subtle-hover: rgba(79, 153, 31, 0.2);
+
+    --feedback-success-bg:     rgba(79, 153, 31, 0.1);
+    --feedback-success-text:   var(--color-success-300);
+    --feedback-success-border: rgba(79, 153, 31, 0.25);
+    --feedback-success-icon:   var(--color-success-400);
+
+    --feedback-warning-bg:     rgba(217, 169, 0, 0.1);
+    --feedback-warning-text:   var(--color-warning-300);
+    --feedback-warning-border: rgba(217, 169, 0, 0.25);
+    --feedback-warning-icon:   var(--color-warning-400);
+
+    --feedback-error-bg:       rgba(236, 79, 26, 0.1);
+    --feedback-error-text:     var(--color-error-300);
+    --feedback-error-border:   rgba(236, 79, 26, 0.25);
+    --feedback-error-icon:     var(--color-error-400);
+
+    --feedback-info-bg:        rgba(31, 132, 223, 0.1);
+    --feedback-info-text:      var(--color-info-300);
+    --feedback-info-border:    rgba(31, 132, 223, 0.25);
+    --feedback-info-icon:      var(--color-info-400);
+  }
 }

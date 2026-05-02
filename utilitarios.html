@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilitários — Brisa</title>
+  <link rel="stylesheet" href="brisa.css">
+  <link rel="stylesheet" href="paginas/demo.css">
+  <style>
+    .demo-transparent-bg {
+      background-image: linear-gradient(45deg, var(--bg-surface-2) 25%, transparent 25%, transparent 75%, var(--bg-surface-2) 75%),
+                        linear-gradient(45deg, var(--bg-surface-2) 25%, transparent 25%, transparent 75%, var(--bg-surface-2) 75%);
+      background-size: 8px 8px;
+      background-position: 0 0, 4px 4px;
+    }
+  </style>
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Utilitários</h1>
+      <p class="docs-lead">Classes auxiliares para ajustes rápidos de cor, espaçamento, borda e sombra.</p>
+
+      <section class="docs-section">
+        <h2>Cores de texto</h2>
+        <p>Classes para controlar a cor do texto semanticamente, respeitando o tema ativo (claro/escuro).</p>
+        <table class="docs-table">
+          <thead>
+            <tr><th>Classe</th><th>Descrição</th><th>Prévia</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.text-primary</td>
+              <td>Cor de texto principal</td>
+              <td><span class="text-primary" style="font-weight:var(--weight-semibold);">Exemplo</span></td>
+            </tr>
+            <tr>
+              <td>.text-secondary</td>
+              <td>Cor de texto secundário</td>
+              <td><span class="text-secondary" style="font-weight:var(--weight-semibold);">Exemplo</span></td>
+            </tr>
+            <tr>
+              <td>.text-tertiary</td>
+              <td>Cor de texto terciário</td>
+              <td><span class="text-tertiary" style="font-weight:var(--weight-semibold);">Exemplo</span></td>
+            </tr>
+            <tr>
+              <td>.text-disabled</td>
+              <td>Cor de texto desabilitado</td>
+              <td><span class="text-disabled" style="font-weight:var(--weight-semibold);">Exemplo</span></td>
+            </tr>
+            <tr>
+              <td>.text-inverse</td>
+              <td>Texto invertido (branco sobre escuro)</td>
+              <td><span style="background:var(--interactive-default);padding:2px 6px;"><span class="text-inverse" style="font-weight:var(--weight-semibold);">Exemplo</span></span></td>
+            </tr>
+            <tr>
+              <td>.text-accent</td>
+              <td>Cor de destaque</td>
+              <td><span class="text-accent" style="font-weight:var(--weight-semibold);">Exemplo</span></td>
+            </tr>
+            <tr>
+              <td>.text-success</td>
+              <td>Cor de sucesso</td>
+              <td><span class="text-success" style="font-weight:var(--weight-semibold);">Exemplo</span></td>
+            </tr>
+            <tr>
+              <td>.text-warning</td>
+              <td>Cor de atenção</td>
+              <td><span class="text-warning" style="font-weight:var(--weight-semibold);">Exemplo</span></td>
+            </tr>
+            <tr>
+              <td>.text-error</td>
+              <td>Cor de erro</td>
+              <td><span class="text-error" style="font-weight:var(--weight-semibold);">Exemplo</span></td>
+            </tr>
+            <tr>
+              <td>.text-info</td>
+              <td>Cor de informação</td>
+              <td><span class="text-info" style="font-weight:var(--weight-semibold);">Exemplo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="docs-section">
+        <h2>Cores de fundo</h2>
+        <p>Classes para definir a cor de fundo de elementos, seguindo a hierarquia visual do sistema.</p>
+        <table class="docs-table">
+          <thead>
+            <tr><th>Classe</th><th>Descrição</th><th>Prévia</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.bg-page</td>
+              <td>Fundo da página</td>
+              <td><div class="bg-page" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.bg-surface</td>
+              <td>Fundo de superfície</td>
+              <td><div class="bg-surface" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.bg-surface-2</td>
+              <td>Fundo de superfície elevada</td>
+              <td><div class="bg-surface-2" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.bg-surface-3</td>
+              <td>Fundo de superfície mais elevada</td>
+              <td><div class="bg-surface-3" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.bg-accent</td>
+              <td>Fundo de destaque</td>
+              <td><div class="bg-accent" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.bg-success</td>
+              <td>Fundo de sucesso</td>
+              <td><div class="bg-success" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.bg-warning</td>
+              <td>Fundo de atenção</td>
+              <td><div class="bg-warning" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.bg-error</td>
+              <td>Fundo de erro</td>
+              <td><div class="bg-error" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.bg-info</td>
+              <td>Fundo de informação</td>
+              <td><div class="bg-info" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.bg-transparent</td>
+              <td>Fundo transparente</td>
+              <td><div class="bg-transparent demo-transparent-bg" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="docs-section">
+        <h2>Bordas</h2>
+        <p>Classes para adicionar ou remover bordas com as cores do sistema.</p>
+        <table class="docs-table">
+          <thead>
+            <tr><th>Classe</th><th>Descrição</th><th>Prévia</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.border</td>
+              <td>Borda completa padrão</td>
+              <td><div class="border" style="width:3rem;height:2rem;background:var(--bg-surface);"></div></td>
+            </tr>
+            <tr>
+              <td>.border-0</td>
+              <td>Remove todas as bordas</td>
+              <td><div class="border-0" style="width:3rem;height:2rem;background:var(--bg-surface-2);"></div></td>
+            </tr>
+            <tr>
+              <td>.border-t</td>
+              <td>Borda superior</td>
+              <td><div class="border-t" style="width:3rem;height:2rem;background:var(--bg-surface);"></div></td>
+            </tr>
+            <tr>
+              <td>.border-b</td>
+              <td>Borda inferior</td>
+              <td><div class="border-b" style="width:3rem;height:2rem;background:var(--bg-surface);"></div></td>
+            </tr>
+            <tr>
+              <td>.border-l</td>
+              <td>Borda esquerda</td>
+              <td><div class="border-l" style="width:3rem;height:2rem;background:var(--bg-surface);"></div></td>
+            </tr>
+            <tr>
+              <td>.border-r</td>
+              <td>Borda direita</td>
+              <td><div class="border-r" style="width:3rem;height:2rem;background:var(--bg-surface);"></div></td>
+            </tr>
+            <tr>
+              <td>.border-default</td>
+              <td>Borda com cor padrão</td>
+              <td><div class="border-default" style="width:3rem;height:2rem;background:var(--bg-surface);"></div></td>
+            </tr>
+            <tr>
+              <td>.border-strong</td>
+              <td>Borda com cor forte</td>
+              <td><div class="border-strong" style="width:3rem;height:2rem;background:var(--bg-surface);"></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="docs-section">
+        <h2>Sombras</h2>
+        <p>Classes de sombra com elevação progressiva. Sombras reduzidas, sem exagero.</p>
+        <table class="docs-table">
+          <thead>
+            <tr><th>Classe</th><th>Descrição</th><th>Prévia</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.shadow-none</td>
+              <td>Remove sombra</td>
+              <td><div class="shadow-none bg-surface" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.shadow-xs</td>
+              <td>Sombra extra sutil</td>
+              <td><div class="shadow-xs bg-surface" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.shadow-sm</td>
+              <td>Sombra sutil</td>
+              <td><div class="shadow-sm bg-surface" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.shadow</td>
+              <td>Sombra padrão</td>
+              <td><div class="shadow bg-surface" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.shadow-lg</td>
+              <td>Sombra grande</td>
+              <td><div class="shadow-lg bg-surface" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.shadow-xl</td>
+              <td>Sombra extra grande</td>
+              <td><div class="shadow-xl bg-surface" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.shadow-2xl</td>
+              <td>Sombra máxima</td>
+              <td><div class="shadow-2xl bg-surface" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+            <tr>
+              <td>.shadow-inner</td>
+              <td>Sombra interna</td>
+              <td><div class="shadow-inner bg-surface" style="width:3rem;height:2rem;border:1px solid var(--border-default);"></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="docs-section">
+        <h2>Espaçamento</h2>
+        <p>Classes utilitárias de margem e padding baseadas na escala de espaço do Brisa. Os valores seguem os tokens <code class="docs-code">--space-1</code> a <code class="docs-code">--space-16</code>.</p>
+        <table class="docs-table">
+          <thead>
+            <tr><th>Classe</th><th>Descrição</th><th>Valor</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code class="docs-code">.m-1</code> a <code class="docs-code">.m-16</code></td><td>Margem em todos os lados</td><td>--space-1 a --space-16</td></tr>
+            <tr><td><code class="docs-code">.p-1</code> a <code class="docs-code">.p-16</code></td><td>Padding em todos os lados</td><td>--space-1 a --space-16</td></tr>
+            <tr><td><code class="docs-code">.mt-*</code>, <code class="docs-code">.mr-*</code>, <code class="docs-code">.mb-*</code>, <code class="docs-code">.ml-*</code></td><td>Margem por lado</td><td>--space-1 a --space-16</td></tr>
+            <tr><td><code class="docs-code">.pt-*</code>, <code class="docs-code">.pr-*</code>, <code class="docs-code">.pb-*</code>, <code class="docs-code">.pl-*</code></td><td>Padding por lado</td><td>--space-1 a --space-16</td></tr>
+            <tr><td><code class="docs-code">.mx-*</code>, <code class="docs-code">.my-*</code></td><td>Margem horizontal / vertical</td><td>--space-1 a --space-16</td></tr>
+            <tr><td><code class="docs-code">.px-*</code>, <code class="docs-code">.py-*</code></td><td>Padding horizontal / vertical</td><td>--space-1 a --space-16</td></tr>
+            <tr><td><code class="docs-code">.gap-1</code> a <code class="docs-code">.gap-16</code></td><td>Gap em flex/grid containers</td><td>--space-1 a --space-16</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from './js/brisa.js';</script>
+</body>
+</html>

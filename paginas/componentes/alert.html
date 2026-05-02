@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Alert</h1>
+      <p class="docs-lead">Mensagem de feedback para informar, alertar ou confirmar ações do usuário.</p>
+
+      <section class="docs-section">
+        <h2>Variantes</h2>
+        <p>Quatro variantes para cada contexto de feedback: informação, sucesso, atenção e erro.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="alert alert--info">
+              <div class="alert__icon"></div>
+              <div class="alert__content">
+                <div class="alert__title">Informação</div>
+                <div class="alert__body">Uma atualização está disponível para o seu sistema.</div>
+              </div>
+              <button class="alert__close" aria-label="Fechar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+            <div class="alert alert--success">
+              <div class="alert__icon"></div>
+              <div class="alert__content">
+                <div class="alert__title">Sucesso</div>
+                <div class="alert__body">Seu documento foi salvo com sucesso.</div>
+              </div>
+              <button class="alert__close" aria-label="Fechar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+            <div class="alert alert--warning">
+              <div class="alert__icon"></div>
+              <div class="alert__content">
+                <div class="alert__title">Atenção</div>
+                <div class="alert__body">Seu plano expira em 3 dias. Renove para continuar.</div>
+              </div>
+              <button class="alert__close" aria-label="Fechar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+            <div class="alert alert--error">
+              <div class="alert__icon"></div>
+              <div class="alert__content">
+                <div class="alert__title">Erro</div>
+                <div class="alert__body">Não foi possível processar o pagamento. Tente novamente.</div>
+              </div>
+              <button class="alert__close" aria-label="Fechar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="alert alert--info"&gt;
+  &lt;div class="alert__icon"&gt;&lt;/div&gt;
+  &lt;div class="alert__content"&gt;
+    &lt;div class="alert__title"&gt;Informação&lt;/div&gt;
+    &lt;div class="alert__body"&gt;Uma atualização está disponível.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="alert__close" aria-label="Fechar"&gt;&lt;svg&gt;...&lt;/svg&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Com ícones</h2>
+        <p>Alertas com ícones personalizados na área lateral para reforçar o significado.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="alert alert--info">
+              <div class="alert__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              </div>
+              <div class="alert__content">
+                <div class="alert__title">Dica</div>
+                <div class="alert__body">Use atalhos de teclado para navegar mais rápido.</div>
+              </div>
+            </div>
+            <div class="alert alert--success">
+              <div class="alert__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="alert__content">
+                <div class="alert__title">Concluído</div>
+                <div class="alert__body">Todos os itens foram sincronizados com o servidor.</div>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="alert alert--info"&gt;
+  &lt;div class="alert__icon"&gt;
+    &lt;svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"&gt;&lt;circle cx="12" cy="12" r="10"/&gt;&lt;line x1="12" y1="16" x2="12" y2="12"/&gt;&lt;line x1="12" y1="8" x2="12.01" y2="8"/&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;div class="alert__content"&gt;
+    &lt;div class="alert__title"&gt;Dica&lt;/div&gt;
+    &lt;div class="alert__body"&gt;Use atalhos de teclado.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Acento lateral</h2>
+        <p>Variante com borda lateral colorida, sem borda completa — mais discreta para uso inline.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="alert alert--accent alert--info">
+              <div class="alert__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              </div>
+              <div class="alert__content">
+                <div class="alert__title">Novidade</div>
+                <div class="alert__body">Nova versão do painel disponível com melhorias de performance.</div>
+              </div>
+            </div>
+            <div class="alert alert--accent alert--success">
+              <div class="alert__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="alert__content">
+                <div class="alert__title">Verificado</div>
+                <div class="alert__body">Sua conta foi verificada com sucesso. Bem-vindo.</div>
+              </div>
+            </div>
+            <div class="alert alert--accent alert--error">
+              <div class="alert__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+              </div>
+              <div class="alert__content">
+                <div class="alert__title">Falha</div>
+                <div class="alert__body">O upload do arquivo excede o limite de 10 MB.</div>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="alert alert--accent alert--info"&gt;
+  &lt;div class="alert__icon"&gt;...&lt;/div&gt;
+  &lt;div class="alert__content"&gt;
+    &lt;div class="alert__title"&gt;Novidade&lt;/div&gt;
+    &lt;div class="alert__body"&gt;Nova versão do painel disponível.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Toast</h2>
+        <p>Notificação flutuante de canto, com botão de fechar. O posicionamento e a animação são controlados via JavaScript.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <div class="alert alert--success" style="max-width:360px;">
+              <div class="alert__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="alert__content">
+                <div class="alert__title">Salvo</div>
+                <div class="alert__body">Alterações foram salvas.</div>
+              </div>
+              <button class="alert__close" aria-label="Fechar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="alert alert--success" style="max-width:360px;"&gt;
+  &lt;div class="alert__icon"&gt;
+    &lt;svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"&gt;&lt;polyline points="20 6 9 17 4 12"/&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;div class="alert__content"&gt;
+    &lt;div class="alert__title"&gt;Salvo&lt;/div&gt;
+    &lt;div class="alert__body"&gt;Alterações foram salvas.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="alert__close" aria-label="Fechar"&gt;&lt;svg&gt;...&lt;/svg&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

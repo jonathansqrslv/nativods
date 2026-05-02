@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinner / Progresso / Skeleton — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Spinner / Progresso / Skeleton</h1>
+      <p class="docs-lead">Indicadores de carregamento, progresso e estado fantasma.</p>
+
+      <section class="docs-section">
+        <h2>Spinner (circular)</h2>
+        <p>Cinco tamanhos para diferentes densidades de interface.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <div class="spinner spinner--xs" role="status" aria-label="Carregando"></div>
+            <div class="spinner spinner--sm" role="status" aria-label="Carregando"></div>
+            <div class="spinner spinner--md" role="status" aria-label="Carregando"></div>
+            <div class="spinner spinner--lg" role="status" aria-label="Carregando"></div>
+            <div class="spinner spinner--xl" role="status" aria-label="Carregando"></div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="spinner spinner--xs" role="status" aria-label="Carregando"&gt;&lt;/div&gt;
+&lt;div class="spinner spinner--sm" role="status" aria-label="Carregando"&gt;&lt;/div&gt;
+&lt;div class="spinner spinner--md" role="status" aria-label="Carregando"&gt;&lt;/div&gt;
+&lt;div class="spinner spinner--lg" role="status" aria-label="Carregando"&gt;&lt;/div&gt;
+&lt;div class="spinner spinner--xl" role="status" aria-label="Carregando"&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Spinner cores</h2>
+        <p>Variantes de cor: branco para fundos escuros e <code class="docs-code">current</code> para herdar a cor do texto.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage">
+            <div style="background:var(--interactive-default);padding:var(--space-3);display:flex;align-items:center;gap:var(--space-4);">
+              <div class="spinner spinner--white" role="status" aria-label="Carregando"></div>
+              <span style="font-size:var(--text-sm);color:white;">spinner--white</span>
+            </div>
+            <div class="spinner spinner--current" role="status" aria-label="Carregando"></div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="spinner spinner--white" role="status" aria-label="Carregando"&gt;&lt;/div&gt;
+&lt;div class="spinner spinner--current" role="status" aria-label="Carregando"&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Barra de loading</h2>
+        <p>Indicador de carregamento linear com preenchimento animado.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="spinner-bar">
+              <div class="spinner-bar__fill"></div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="spinner-bar"&gt;
+  &lt;div class="spinner-bar__fill"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Barra de progresso</h2>
+        <p>Progresso determinável com variantes de cor e estado indeterminado.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="progress">
+              <div class="progress__bar" style="width:60%;"></div>
+            </div>
+            <div class="progress">
+              <div class="progress__bar progress__bar--success" style="width:60%;"></div>
+            </div>
+            <div class="progress">
+              <div class="progress__bar progress__bar--warning" style="width:60%;"></div>
+            </div>
+            <div class="progress">
+              <div class="progress__bar progress__bar--error" style="width:60%;"></div>
+            </div>
+            <div class="progress progress--indeterminate">
+              <div class="progress__bar"></div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="progress"&gt;
+  &lt;div class="progress__bar" style="width:60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress__bar progress__bar--success" style="width:60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress__bar progress__bar--warning" style="width:60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress__bar progress__bar--error" style="width:60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress--indeterminate"&gt;
+  &lt;div class="progress__bar"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Tamanhos da barra</h2>
+        <p>Barras de progresso nos cinco tamanhos disponíveis.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="progress progress--xs">
+              <div class="progress__bar" style="width:60%;"></div>
+            </div>
+            <div class="progress progress--sm">
+              <div class="progress__bar" style="width:60%;"></div>
+            </div>
+            <div class="progress progress--md">
+              <div class="progress__bar" style="width:60%;"></div>
+            </div>
+            <div class="progress progress--lg">
+              <div class="progress__bar" style="width:60%;"></div>
+            </div>
+            <div class="progress progress--xl">
+              <div class="progress__bar" style="width:60%;"></div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="progress progress--xs"&gt;
+  &lt;div class="progress__bar" style="width:60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress--sm"&gt;
+  &lt;div class="progress__bar" style="width:60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress--md"&gt;
+  &lt;div class="progress__bar" style="width:60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress--lg"&gt;
+  &lt;div class="progress__bar" style="width:60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress--xl"&gt;
+  &lt;div class="progress__bar" style="width:60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Skeleton</h2>
+        <p>Estados fantasmas para indicar carregamento de conteúdo textual e elementos de interface.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage demo-preview__stage--block">
+            <div class="skeleton skeleton--text" style="width:100%;"></div>
+            <div class="skeleton skeleton--text" style="width:85%;"></div>
+            <div class="skeleton skeleton--text" style="width:75%;"></div>
+            <div class="skeleton skeleton--heading" style="width:60%;"></div>
+            <div class="skeleton skeleton--btn" style="width:120px;"></div>
+            <div style="display:flex;align-items:center;gap:var(--space-4);">
+              <div class="skeleton skeleton--circle" style="width:var(--space-8);height:var(--space-8);"></div>
+              <div class="skeleton skeleton--circle" style="width:var(--space-10);height:var(--space-10);"></div>
+              <div class="skeleton skeleton--circle" style="width:var(--space-12);height:var(--space-12);"></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:var(--space-4);">
+              <div class="skeleton skeleton--avatar" style="width:24px;height:24px;"></div>
+              <div class="skeleton skeleton--avatar" style="width:36px;height:36px;"></div>
+              <div class="skeleton skeleton--avatar" style="width:48px;height:48px;"></div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class="skeleton skeleton--text" style="width:100%;"&gt;&lt;/div&gt;
+&lt;div class="skeleton skeleton--text" style="width:85%;"&gt;&lt;/div&gt;
+&lt;div class="skeleton skeleton--text" style="width:75%;"&gt;&lt;/div&gt;
+&lt;div class="skeleton skeleton--heading" style="width:60%;"&gt;&lt;/div&gt;
+&lt;div class="skeleton skeleton--btn" style="width:120px;"&gt;&lt;/div&gt;
+&lt;div class="skeleton skeleton--circle"&gt;&lt;/div&gt;
+&lt;div class="skeleton skeleton--avatar"&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

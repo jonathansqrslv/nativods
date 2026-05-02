@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Dropdown</h1>
+      <p class="docs-lead">Menu suspenso para ações contextuais, navegação ou seleção.</p>
+
+      <section class="docs-section">
+        <h2>Básico</h2>
+        <p>Menu com itens de ação e separador. Use <code class="docs-code">dropdown__item--danger</code> para ações destrutivas.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="min-height:260px;flex-direction:column;align-items:flex-start;">
+            <div class="dropdown">
+              <button class="btn btn--neutral btn--sm dropdown__trigger">Ações</button>
+              <div class="dropdown__menu is-open" style="opacity:1;transform:none;pointer-events:auto;">
+                <button class="dropdown__item">Editar</button>
+                <button class="dropdown__item">Duplicar</button>
+                <button class="dropdown__item">Arquivar</button>
+                <div class="dropdown__separator"></div>
+                <button class="dropdown__item dropdown__item--danger">Excluir</button>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn--neutral btn--sm dropdown__trigger&quot;&gt;Ações&lt;/button&gt;
+  &lt;div class=&quot;dropdown__menu&quot;&gt;
+    &lt;button class=&quot;dropdown__item&quot;&gt;Editar&lt;/button&gt;
+    &lt;button class=&quot;dropdown__item&quot;&gt;Duplicar&lt;/button&gt;
+    &lt;button class=&quot;dropdown__item&quot;&gt;Arquivar&lt;/button&gt;
+    &lt;div class=&quot;dropdown__separator&quot;&gt;&lt;/div&gt;
+    &lt;button class=&quot;dropdown__item dropdown__item--danger&quot;&gt;Excluir&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Com ícones</h2>
+        <p>Itens podem incluir ícones SVG para reforçar o significado da ação.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="min-height:260px;flex-direction:column;align-items:flex-start;">
+            <div class="dropdown">
+              <button class="btn btn--neutral btn--sm dropdown__trigger">Projeto</button>
+              <div class="dropdown__menu is-open" style="opacity:1;transform:none;pointer-events:auto;">
+                <button class="dropdown__item dropdown__item--active">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                  Editar
+                </button>
+                <button class="dropdown__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Duplicar
+                </button>
+                <button class="dropdown__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+                  Arquivar
+                </button>
+                <div class="dropdown__separator"></div>
+                <button class="dropdown__item dropdown__item--danger">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                  Excluir
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn--neutral btn--sm dropdown__trigger&quot;&gt;Projeto&lt;/button&gt;
+  &lt;div class=&quot;dropdown__menu&quot;&gt;
+    &lt;button class=&quot;dropdown__item dropdown__item--active&quot;&gt;
+      &lt;svg&gt;...&lt;/svg&gt; Editar
+    &lt;/button&gt;
+    &lt;button class=&quot;dropdown__item&quot;&gt;
+      &lt;svg&gt;...&lt;/svg&gt; Duplicar
+    &lt;/button&gt;
+    &lt;button class=&quot;dropdown__item&quot;&gt;
+      &lt;svg&gt;...&lt;/svg&gt; Arquivar
+    &lt;/button&gt;
+    &lt;div class=&quot;dropdown__separator&quot;&gt;&lt;/div&gt;
+    &lt;button class=&quot;dropdown__item dropdown__item--danger&quot;&gt;
+      &lt;svg&gt;...&lt;/svg&gt; Excluir
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Seções</h2>
+        <p>Use <code class="docs-code">dropdown__label</code> para agrupar itens com um rótulo descritivo.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="min-height:290px;flex-direction:column;align-items:flex-start;">
+            <div class="dropdown">
+              <button class="btn btn--neutral btn--sm dropdown__trigger">Compartilhar</button>
+              <div class="dropdown__menu is-open" style="opacity:1;transform:none;pointer-events:auto;">
+                <div class="dropdown__label">Equipe</div>
+                <button class="dropdown__item">Ana Silva</button>
+                <button class="dropdown__item">Carlos Mendes</button>
+                <div class="dropdown__separator"></div>
+                <div class="dropdown__label">Canais</div>
+                <button class="dropdown__item">Copiar link</button>
+                <button class="dropdown__item">Enviar por e-mail</button>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code>&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn--neutral btn--sm dropdown__trigger&quot;&gt;Compartilhar&lt;/button&gt;
+  &lt;div class=&quot;dropdown__menu&quot;&gt;
+    &lt;div class=&quot;dropdown__label&quot;&gt;Equipe&lt;/div&gt;
+    &lt;button class=&quot;dropdown__item&quot;&gt;Ana Silva&lt;/button&gt;
+    &lt;button class=&quot;dropdown__item&quot;&gt;Carlos Mendes&lt;/button&gt;
+    &lt;div class=&quot;dropdown__separator&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;dropdown__label&quot;&gt;Canais&lt;/div&gt;
+    &lt;button class=&quot;dropdown__item&quot;&gt;Copiar link&lt;/button&gt;
+    &lt;button class=&quot;dropdown__item&quot;&gt;Enviar por e-mail&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

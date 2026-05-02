@@ -1,0 +1,3 @@
+@import "./navbar.css"     layer(brisa-components);
+@import "./tabs.css"       layer(brisa-components);
+@import "./pagination.css" layer(brisa-components);

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox / Radio / Switch — Brisa</title>
+  <link rel="stylesheet" href="../../brisa.css">
+  <link rel="stylesheet" href="../demo.css">
+</head>
+<body class="docs-layout">
+  <div data-brisa-nav></div>
+  <div class="docs-body">
+    <aside data-brisa-sidebar></aside>
+    <main class="docs-main">
+      <h1>Checkbox / Radio / Switch</h1>
+      <p class="docs-lead">Controles de seleção. Checkbox para múltipla escolha, radio para escolha única, switch para ativar/desativar.</p>
+
+      <section class="docs-section">
+        <h2>Checkbox</h2>
+        <p>Quatro estados possíveis: padrão, marcado, desabilitado e marcado+desabilitado.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:flex-start;gap:var(--space-3);">
+            <div class="checkbox">
+              <input id="chk1" class="checkbox__input" type="checkbox">
+              <label class="checkbox__label" for="chk1">Lembrar de mim</label>
+            </div>
+            <div class="checkbox">
+              <input id="chk2" class="checkbox__input" type="checkbox" checked>
+              <label class="checkbox__label" for="chk2">Aceito os termos de uso</label>
+            </div>
+            <div class="checkbox">
+              <input id="chk3" class="checkbox__input" type="checkbox" disabled>
+              <label class="checkbox__label" for="chk3">Opção indisponível</label>
+            </div>
+            <div class="checkbox">
+              <input id="chk4" class="checkbox__input" type="checkbox" checked disabled>
+              <label class="checkbox__label" for="chk4">Marcado e desabilitado</label>
+            </div>
+            <div class="checkbox">
+              <input id="chk5" class="checkbox__input" type="checkbox">
+              <label class="checkbox__label" for="chk5">Receber newsletter</label>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code class="language-html">&lt;div class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox"&gt;
+  &lt;label class="checkbox__label"&gt;Lembrar de mim&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox" checked&gt;
+  &lt;label class="checkbox__label"&gt;Aceito os termos de uso&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox" disabled&gt;
+  &lt;label class="checkbox__label"&gt;Opção indisponível&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox" checked disabled&gt;
+  &lt;label class="checkbox__label"&gt;Marcado e desabilitado&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Checkbox inline</h2>
+        <p>Com <code class="docs-code">.checkbox-group--inline</code>, os itens ficam lado a lado.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:flex-start;gap:var(--space-3);">
+            <div class="checkbox-group checkbox-group--inline">
+              <div class="checkbox">
+                <input id="chk-in1" class="checkbox__input" type="checkbox" checked>
+                <label class="checkbox__label" for="chk-in1">Design</label>
+              </div>
+              <div class="checkbox">
+                <input id="chk-in2" class="checkbox__input" type="checkbox">
+                <label class="checkbox__label" for="chk-in2">Código</label>
+              </div>
+              <div class="checkbox">
+                <input id="chk-in3" class="checkbox__input" type="checkbox" checked>
+                <label class="checkbox__label" for="chk-in3">Pesquisa</label>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code class="language-html">&lt;div class="checkbox-group checkbox-group--inline"&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;input class="checkbox__input" type="checkbox" checked&gt;
+    &lt;label class="checkbox__label"&gt;Design&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;input class="checkbox__input" type="checkbox"&gt;
+    &lt;label class="checkbox__label"&gt;Código&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;input class="checkbox__input" type="checkbox" checked&gt;
+    &lt;label class="checkbox__label"&gt;Pesquisa&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Radio</h2>
+        <p>Grupo de radios com seleção única.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:flex-start;gap:var(--space-3);">
+            <div class="radio-group">
+              <div class="radio">
+                <input id="rad1" class="radio__input" type="radio" name="plano" value="basico">
+                <label class="radio__label" for="rad1">Plano Básico — Gratuito</label>
+              </div>
+              <div class="radio">
+                <input id="rad2" class="radio__input" type="radio" name="plano" value="pro" checked>
+                <label class="radio__label" for="rad2">Plano Pro — R$ 29/mês</label>
+              </div>
+              <div class="radio">
+                <input id="rad3" class="radio__input" type="radio" name="plano" value="enterprise">
+                <label class="radio__label" for="rad3">Plano Enterprise — Sob consulta</label>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code class="language-html">&lt;div class="radio-group"&gt;
+  &lt;div class="radio"&gt;
+    &lt;input class="radio__input" type="radio" name="plano" value="basico"&gt;
+    &lt;label class="radio__label"&gt;Plano Básico — Gratuito&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="radio"&gt;
+    &lt;input class="radio__input" type="radio" name="plano" value="pro" checked&gt;
+    &lt;label class="radio__label"&gt;Plano Pro — R$ 29/mês&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="radio"&gt;
+    &lt;input class="radio__input" type="radio" name="plano" value="enterprise"&gt;
+    &lt;label class="radio__label"&gt;Plano Enterprise — Sob consulta&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Radio inline</h2>
+        <p>Mesmo grupo de radios, agora lado a lado.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:flex-start;gap:var(--space-3);">
+            <div class="radio-group radio-group--inline">
+              <div class="radio">
+                <input id="rin1" class="radio__input" type="radio" name="tamanho" value="p" checked>
+                <label class="radio__label" for="rin1">P</label>
+              </div>
+              <div class="radio">
+                <input id="rin2" class="radio__input" type="radio" name="tamanho" value="m">
+                <label class="radio__label" for="rin2">M</label>
+              </div>
+              <div class="radio">
+                <input id="rin3" class="radio__input" type="radio" name="tamanho" value="g">
+                <label class="radio__label" for="rin3">G</label>
+              </div>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code class="language-html">&lt;div class="radio-group radio-group--inline"&gt;
+  &lt;div class="radio"&gt;
+    &lt;input class="radio__input" type="radio" name="tamanho" value="p" checked&gt;
+    &lt;label class="radio__label"&gt;P&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="radio"&gt;
+    &lt;input class="radio__input" type="radio" name="tamanho" value="m"&gt;
+    &lt;label class="radio__label"&gt;M&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="radio"&gt;
+    &lt;input class="radio__input" type="radio" name="tamanho" value="g"&gt;
+    &lt;label class="radio__label"&gt;G&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2>Switch</h2>
+        <p>Ativar/desativar com feedback visual imediato.</p>
+        <div class="demo-preview">
+          <div class="demo-preview__stage" style="flex-direction:column;align-items:flex-start;gap:var(--space-3);">
+            <div class="switch">
+              <input id="sw1" class="switch__input" type="checkbox" checked>
+              <label class="switch__label" for="sw1">Notificações ativas</label>
+            </div>
+            <div class="switch">
+              <input id="sw2" class="switch__input" type="checkbox">
+              <label class="switch__label" for="sw2">Modo escuro automático</label>
+            </div>
+            <div class="switch">
+              <input id="sw3" class="switch__input" type="checkbox" disabled>
+              <label class="switch__label" for="sw3">Recurso indisponível</label>
+            </div>
+          </div>
+          <button class="demo-preview__toggle" onclick="Brisa.toggleCode(this)">Mostrar código</button>
+          <div class="demo-preview__code" hidden>
+            <pre><code class="language-html">&lt;div class="switch"&gt;
+  &lt;input class="switch__input" type="checkbox" checked&gt;
+  &lt;label class="switch__label"&gt;Notificações ativas&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="switch"&gt;
+  &lt;input class="switch__input" type="checkbox"&gt;
+  &lt;label class="switch__label"&gt;Modo escuro automático&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="switch"&gt;
+  &lt;input class="switch__input" type="checkbox" disabled&gt;
+  &lt;label class="switch__label"&gt;Recurso indisponível&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">import { Brisa } from '../../../js/brisa.js';</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
-@import "./colors.css"     layer(ds-tokens);
-@import "./typography.css" layer(ds-tokens);
-@import "./spacing.css"    layer(ds-tokens);
-@import "./radii.css"      layer(ds-tokens);
-@import "./shadows.css"    layer(ds-tokens);
-@import "./motion.css"     layer(ds-tokens);
+@import "./colors.css"     layer(brisa-tokens);
+@import "./typography.css" layer(brisa-tokens);
+@import "./spacing.css"    layer(brisa-tokens);
+@import "./radii.css"      layer(brisa-tokens);
+@import "./shadows.css"    layer(brisa-tokens);
+@import "./motion.css"     layer(brisa-tokens);

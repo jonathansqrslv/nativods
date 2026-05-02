@@ -10,11 +10,11 @@ npm run tokens:figma
 
 O comando le os arquivos CSS em `tokens/` e gera:
 
-- `tokens/figma/nativo.primitives.tokens.json`
-- `tokens/figma/nativo.semantic.light.tokens.json`
-- `tokens/figma/nativo.semantic.dark.tokens.json`
-- `tokens/figma/nativo.accents.tokens.json`
-- `tokens/figma/nativo.reference.tokens.json`
+- `figma/tokens/nativo.primitives.tokens.json`
+- `figma/tokens/nativo.semantic.light.tokens.json`
+- `figma/tokens/nativo.semantic.dark.tokens.json`
+- `figma/tokens/nativo.accents.tokens.json`
+- `figma/tokens/nativo.reference.tokens.json`
 
 ## Como importar no Figma
 
@@ -25,6 +25,45 @@ O comando le os arquivos CSS em `tokens/` e gera:
 5. Importe `nativo.semantic.light.tokens.json` e `nativo.semantic.dark.tokens.json`.
 6. Organize os semanticos como modes `light` e `dark` dentro da collection de cores.
 7. Importe `nativo.accents.tokens.json` como base para os modes de acento.
+
+## Sync via Figma REST API
+
+O sync automatizado usa os tokens gerados em `figma/tokens/` e cria/atualiza Variables locais em um arquivo Figma.
+
+Primeiro gere os tokens:
+
+```bash
+npm run tokens:figma
+```
+
+Depois rode um dry-run:
+
+```bash
+npm run figma:sync
+```
+
+O dry-run monta o payload e salva uma copia local em `figma/tokens/figma-variables.payload.json`. Esse arquivo e ignorado pelo Git.
+
+Para comparar contra um arquivo Figma real sem aplicar mudancas:
+
+```bash
+FIGMA_FILE_KEY=abc123 FIGMA_TOKEN=figd_xxx npm run figma:sync
+```
+
+Para aplicar:
+
+```bash
+FIGMA_FILE_KEY=abc123 FIGMA_TOKEN=figd_xxx npm run figma:sync:apply
+```
+
+Requisitos da REST API de Variables:
+
+- plano Enterprise;
+- Full seat na organizacao;
+- permissao de edicao no arquivo;
+- token com scopes `file_variables:read` e `file_variables:write`.
+
+O primeiro sync nao apaga variables existentes. Ele cria ou atualiza o que reconhece por nome de collection e nome de variable.
 
 ## Estrutura recomendada
 
@@ -40,17 +79,33 @@ Modes de cor:
 
 - `light`
 - `dark`
-- `mata`
-- `azul`
-- `cerrado`
-- `ipe`
-- `terra`
-- `urucum`
+
+Modes de acento:
+
+- `mata-light`
+- `mata-dark`
+- `azul-light`
+- `azul-dark`
+- `cerrado-light`
+- `cerrado-dark`
+- `ipe-light`
+- `ipe-dark`
+- `terra-light`
+- `terra-dark`
+- `urucum-light`
+- `urucum-dark`
 
 Mantenha os tokens primitivos separados dos semanticos:
 
 - Primitivos: `color/primitive/gray/100`, `spacing/4`, `typography/size/base`.
 - Semanticos: `color/semantic/bg/surface`, `color/semantic/text/primary`, `color/semantic/interactive/default`.
+
+No sync REST, a estrutura fica assim:
+
+- `Nativo / Color`: cores primitivas com mode `default`.
+- `Nativo / Theme`: cores semanticas com modes `light` e `dark`.
+- `Nativo / Accent`: acentos com modes combinados de acento e tema, como `azul-light` e `azul-dark`.
+- `Nativo / Spacing`, `Nativo / Typography`, `Nativo / Radius` e `Nativo / Motion`: foundations com mode `default`.
 
 ## Limites atuais
 

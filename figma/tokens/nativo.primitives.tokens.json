@@ -547,203 +547,6 @@
       }
     }
   },
-  "typography": {
-    "size": {
-      "primary": {
-        "$value": "#1e1916",
-        "$type": "dimension",
-        "$description": "--text-primary"
-      },
-      "secondary": {
-        "$value": "#6b6158",
-        "$type": "dimension",
-        "$description": "--text-secondary"
-      },
-      "tertiary": {
-        "$value": "#8c8278",
-        "$type": "dimension",
-        "$description": "--text-tertiary"
-      },
-      "disabled": {
-        "$value": "#b3a99c",
-        "$type": "dimension",
-        "$description": "--text-disabled"
-      },
-      "inverse": {
-        "$value": "#ffffff",
-        "$type": "dimension",
-        "$description": "--text-inverse"
-      },
-      "on-accent": {
-        "$value": "#ffffff",
-        "$type": "dimension",
-        "$description": "--text-on-accent"
-      },
-      "2xs": {
-        "$value": "0.625rem",
-        "$type": "dimension",
-        "$description": "--text-2xs"
-      },
-      "xs": {
-        "$value": "0.75rem",
-        "$type": "dimension",
-        "$description": "--text-xs"
-      },
-      "sm": {
-        "$value": "0.875rem",
-        "$type": "dimension",
-        "$description": "--text-sm"
-      },
-      "base": {
-        "$value": "1rem",
-        "$type": "dimension",
-        "$description": "--text-base"
-      },
-      "lg": {
-        "$value": "1.125rem",
-        "$type": "dimension",
-        "$description": "--text-lg"
-      },
-      "xl": {
-        "$value": "1.25rem",
-        "$type": "dimension",
-        "$description": "--text-xl"
-      },
-      "2xl": {
-        "$value": "1.5rem",
-        "$type": "dimension",
-        "$description": "--text-2xl"
-      },
-      "3xl": {
-        "$value": "1.875rem",
-        "$type": "dimension",
-        "$description": "--text-3xl"
-      },
-      "4xl": {
-        "$value": "2.25rem",
-        "$type": "dimension",
-        "$description": "--text-4xl"
-      },
-      "5xl": {
-        "$value": "3rem",
-        "$type": "dimension",
-        "$description": "--text-5xl"
-      },
-      "6xl": {
-        "$value": "3.75rem",
-        "$type": "dimension",
-        "$description": "--text-6xl"
-      }
-    },
-    "font": {
-      "sans": {
-        "$value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\"",
-        "$type": "fontFamily",
-        "$description": "--font-sans"
-      },
-      "mono": {
-        "$value": "\"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
-        "$type": "fontFamily",
-        "$description": "--font-mono"
-      },
-      "serif": {
-        "$value": "Georgia, \"Times New Roman\", serif",
-        "$type": "fontFamily",
-        "$description": "--font-serif"
-      }
-    },
-    "weight": {
-      "light": {
-        "$value": "300",
-        "$type": "number",
-        "$description": "--weight-light"
-      },
-      "regular": {
-        "$value": "400",
-        "$type": "number",
-        "$description": "--weight-regular"
-      },
-      "medium": {
-        "$value": "500",
-        "$type": "number",
-        "$description": "--weight-medium"
-      },
-      "semibold": {
-        "$value": "600",
-        "$type": "number",
-        "$description": "--weight-semibold"
-      },
-      "bold": {
-        "$value": "700",
-        "$type": "number",
-        "$description": "--weight-bold"
-      }
-    },
-    "leading": {
-      "none": {
-        "$value": "1",
-        "$type": "number",
-        "$description": "--leading-none"
-      },
-      "tight": {
-        "$value": "1.25",
-        "$type": "number",
-        "$description": "--leading-tight"
-      },
-      "snug": {
-        "$value": "1.375",
-        "$type": "number",
-        "$description": "--leading-snug"
-      },
-      "normal": {
-        "$value": "1.5",
-        "$type": "number",
-        "$description": "--leading-normal"
-      },
-      "relaxed": {
-        "$value": "1.625",
-        "$type": "number",
-        "$description": "--leading-relaxed"
-      },
-      "loose": {
-        "$value": "2",
-        "$type": "number",
-        "$description": "--leading-loose"
-      }
-    },
-    "tracking": {
-      "tighter": {
-        "$value": "0em",
-        "$type": "string",
-        "$description": "--tracking-tighter"
-      },
-      "tight": {
-        "$value": "0em",
-        "$type": "string",
-        "$description": "--tracking-tight"
-      },
-      "normal": {
-        "$value": "0em",
-        "$type": "string",
-        "$description": "--tracking-normal"
-      },
-      "wide": {
-        "$value": "0.025em",
-        "$type": "string",
-        "$description": "--tracking-wide"
-      },
-      "wider": {
-        "$value": "0.05em",
-        "$type": "string",
-        "$description": "--tracking-wider"
-      },
-      "widest": {
-        "$value": "0.1em",
-        "$type": "string",
-        "$description": "--tracking-widest"
-      }
-    }
-  },
   "spacing": {
     "0": {
       "$value": "0",
@@ -889,6 +692,173 @@
       "$value": "0.875rem",
       "$type": "dimension",
       "$description": "--space-3.5"
+    }
+  },
+  "typography": {
+    "font": {
+      "sans": {
+        "$value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\"",
+        "$type": "fontFamily",
+        "$description": "--font-sans"
+      },
+      "mono": {
+        "$value": "\"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+        "$type": "fontFamily",
+        "$description": "--font-mono"
+      },
+      "serif": {
+        "$value": "Georgia, \"Times New Roman\", serif",
+        "$type": "fontFamily",
+        "$description": "--font-serif"
+      }
+    },
+    "size": {
+      "2xs": {
+        "$value": "0.625rem",
+        "$type": "dimension",
+        "$description": "--text-2xs"
+      },
+      "xs": {
+        "$value": "0.75rem",
+        "$type": "dimension",
+        "$description": "--text-xs"
+      },
+      "sm": {
+        "$value": "0.875rem",
+        "$type": "dimension",
+        "$description": "--text-sm"
+      },
+      "base": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$description": "--text-base"
+      },
+      "lg": {
+        "$value": "1.125rem",
+        "$type": "dimension",
+        "$description": "--text-lg"
+      },
+      "xl": {
+        "$value": "1.25rem",
+        "$type": "dimension",
+        "$description": "--text-xl"
+      },
+      "2xl": {
+        "$value": "1.5rem",
+        "$type": "dimension",
+        "$description": "--text-2xl"
+      },
+      "3xl": {
+        "$value": "1.875rem",
+        "$type": "dimension",
+        "$description": "--text-3xl"
+      },
+      "4xl": {
+        "$value": "2.25rem",
+        "$type": "dimension",
+        "$description": "--text-4xl"
+      },
+      "5xl": {
+        "$value": "3rem",
+        "$type": "dimension",
+        "$description": "--text-5xl"
+      },
+      "6xl": {
+        "$value": "3.75rem",
+        "$type": "dimension",
+        "$description": "--text-6xl"
+      }
+    },
+    "weight": {
+      "light": {
+        "$value": "300",
+        "$type": "number",
+        "$description": "--weight-light"
+      },
+      "regular": {
+        "$value": "400",
+        "$type": "number",
+        "$description": "--weight-regular"
+      },
+      "medium": {
+        "$value": "500",
+        "$type": "number",
+        "$description": "--weight-medium"
+      },
+      "semibold": {
+        "$value": "600",
+        "$type": "number",
+        "$description": "--weight-semibold"
+      },
+      "bold": {
+        "$value": "700",
+        "$type": "number",
+        "$description": "--weight-bold"
+      }
+    },
+    "leading": {
+      "none": {
+        "$value": "1",
+        "$type": "number",
+        "$description": "--leading-none"
+      },
+      "tight": {
+        "$value": "1.25",
+        "$type": "number",
+        "$description": "--leading-tight"
+      },
+      "snug": {
+        "$value": "1.375",
+        "$type": "number",
+        "$description": "--leading-snug"
+      },
+      "normal": {
+        "$value": "1.5",
+        "$type": "number",
+        "$description": "--leading-normal"
+      },
+      "relaxed": {
+        "$value": "1.625",
+        "$type": "number",
+        "$description": "--leading-relaxed"
+      },
+      "loose": {
+        "$value": "2",
+        "$type": "number",
+        "$description": "--leading-loose"
+      }
+    },
+    "tracking": {
+      "tighter": {
+        "$value": "0em",
+        "$type": "string",
+        "$description": "--tracking-tighter"
+      },
+      "tight": {
+        "$value": "0em",
+        "$type": "string",
+        "$description": "--tracking-tight"
+      },
+      "normal": {
+        "$value": "0em",
+        "$type": "string",
+        "$description": "--tracking-normal"
+      },
+      "wide": {
+        "$value": "0.025em",
+        "$type": "string",
+        "$description": "--tracking-wide"
+      },
+      "wider": {
+        "$value": "0.05em",
+        "$type": "string",
+        "$description": "--tracking-wider"
+      },
+      "widest": {
+        "$value": "0.1em",
+        "$type": "string",
+        "$description": "--tracking-widest"
+      }
     }
   },
   "radius": {

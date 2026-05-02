@@ -14,7 +14,9 @@
   "main": "js/nativo.js",
   "style": "nativo.css",
   "scripts": {
-    "tokens:figma": "node scripts/export-figma-tokens.mjs"
+    "tokens:figma": "node scripts/export-figma-tokens.mjs",
+    "figma:sync": "node scripts/sync-figma-variables.mjs",
+    "figma:sync:apply": "node scripts/sync-figma-variables.mjs --apply"
   },
   "exports": {
     ".": "./js/nativo.js",

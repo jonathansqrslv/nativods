@@ -96,6 +96,8 @@ design-system/
 └── js/                       comportamento em vanilla JS
 ```
 
+Para entender a fronteira entre runtime, site de documentação e Figma, veja [`docs/architecture.md`](docs/architecture.md).
+
 ## Identidade
 
 nativo parte de uma base neutra quente e de um eixo verde profundo. A referência é gráfica e material, não literal: cartaz de rua, azulejo, tecido, sombra, sol duro, recorte. Mata é o acento padrão; Ipê traz luz; Céu aparece em informação; Urucum e Terra entram como calor e contraste.
@@ -147,7 +149,13 @@ O Nativo pode gerar uma versão dos tokens em JSON DTCG para importação em Fig
 npm run tokens:figma
 ```
 
-Os arquivos são criados em `tokens/figma/`. Veja o fluxo recomendado em [`docs/figma.md`](docs/figma.md).
+Os arquivos são criados em `figma/tokens/`. Veja o fluxo recomendado em [`docs/figma.md`](docs/figma.md).
+
+Para preparar um sync via Figma REST API, rode:
+
+```bash
+npm run figma:sync
+```
 
 ## Dark Mode
 

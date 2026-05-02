@@ -3,74 +3,108 @@
     "semantic": {
       "bg": {
         "page": {
-          "$value": "#faf9f7",
+          "$value": "#120e0c",
           "$type": "color",
           "$description": "--bg-page"
         },
         "surface": {
           "2": {
-            "$value": "#f4f2ee",
+            "$value": "#332d28",
             "$type": "color",
             "$description": "--bg-surface-2"
           },
           "3": {
-            "$value": "#e8e3dc",
+            "$value": "#4e4640",
             "$type": "color",
             "$description": "--bg-surface-3"
           },
           "default": {
-            "$value": "#ffffff",
+            "$value": "#1e1916",
             "$type": "color",
             "$description": "--bg-surface"
           }
         },
         "overlay": {
-          "$value": "rgba(30, 25, 22, 0.5)",
+          "$value": "rgba(0, 0, 0, 0.65)",
           "$type": "color",
           "$description": "--bg-overlay"
         }
       },
       "border": {
         "default": {
-          "$value": "#e8e3dc",
+          "$value": "#332d28",
           "$type": "color",
           "$description": "--border-default"
         },
         "strong": {
-          "$value": "#d4ccc2",
+          "$value": "#4e4640",
           "$type": "color",
           "$description": "--border-strong"
         },
         "focus": {
-          "$value": "#4f991f",
+          "$value": "#70b238",
           "$type": "color",
           "$description": "--border-focus"
         }
       },
+      "text": {
+        "primary": {
+          "$value": "#faf9f7",
+          "$type": "color",
+          "$description": "--text-primary"
+        },
+        "secondary": {
+          "$value": "#b3a99c",
+          "$type": "color",
+          "$description": "--text-secondary"
+        },
+        "tertiary": {
+          "$value": "#8c8278",
+          "$type": "color",
+          "$description": "--text-tertiary"
+        },
+        "disabled": {
+          "$value": "#4e4640",
+          "$type": "color",
+          "$description": "--text-disabled"
+        },
+        "inverse": {
+          "$value": "#1e1916",
+          "$type": "color",
+          "$description": "--text-inverse"
+        },
+        "on": {
+          "accent": {
+            "$value": "#ffffff",
+            "$type": "color",
+            "$description": "--text-on-accent"
+          }
+        }
+      },
       "interactive": {
         "default": {
-          "$value": "#28640f",
+          "$value": "#70b238",
           "$type": "color",
           "$description": "--interactive-default"
         },
         "hover": {
-          "$value": "#204f10",
+          "$value": "#91ca63",
           "$type": "color",
           "$description": "--interactive-hover"
         },
         "active": {
-          "$value": "#1a4010",
+          "$value": "#b7df98",
           "$type": "color",
           "$description": "--interactive-active"
         },
         "subtle": {
           "default": {
-            "$value": "#edf8e8",
+            "$value": "rgba(79, 153, 31, 0.12)",
             "$type": "color",
             "$description": "--interactive-subtle"
           },
           "hover": {
-            "$value": "#d8efc9",
+            "$value": "rgba(79, 153, 31, 0.2)",
             "$type": "color",
             "$description": "--interactive-subtle-hover"
           }
@@ -79,88 +113,88 @@
       "feedback": {
         "success": {
           "bg": {
-            "$value": "#edf8e8",
+            "$value": "rgba(79, 153, 31, 0.1)",
             "$type": "color",
             "$description": "--feedback-success-bg"
           },
           "text": {
-            "$value": "#204f10",
+            "$value": "#91ca63",
             "$type": "color",
             "$description": "--feedback-success-text"
           },
           "border": {
-            "$value": "#b7df98",
+            "$value": "rgba(79, 153, 31, 0.25)",
             "$type": "color",
             "$description": "--feedback-success-border"
           },
           "icon": {
-            "$value": "#347a12",
+            "$value": "#70b238",
             "$type": "color",
             "$description": "--feedback-success-icon"
           }
         },
         "warning": {
           "bg": {
-            "$value": "#fffbe5",
+            "$value": "rgba(217, 169, 0, 0.1)",
             "$type": "color",
             "$description": "--feedback-warning-bg"
           },
           "text": {
-            "$value": "#4a3400",
+            "$value": "#ffd92f",
             "$type": "color",
             "$description": "--feedback-warning-text"
           },
           "border": {
-            "$value": "#ffe873",
+            "$value": "rgba(217, 169, 0, 0.25)",
             "$type": "color",
             "$description": "--feedback-warning-border"
           },
           "icon": {
-            "$value": "#a87b00",
+            "$value": "#f7c600",
             "$type": "color",
             "$description": "--feedback-warning-icon"
           }
         },
         "error": {
           "bg": {
-            "$value": "#fff3ed",
+            "$value": "rgba(236, 79, 26, 0.1)",
             "$type": "color",
             "$description": "--feedback-error-bg"
           },
           "text": {
-            "$value": "#7c2712",
+            "$value": "#ff9870",
             "$type": "color",
             "$description": "--feedback-error-text"
           },
           "border": {
-            "$value": "#ffc0a4",
+            "$value": "rgba(236, 79, 26, 0.25)",
             "$type": "color",
             "$description": "--feedback-error-border"
           },
           "icon": {
-            "$value": "#c83b10",
+            "$value": "#fb6e3b",
             "$type": "color",
             "$description": "--feedback-error-icon"
           }
         },
         "info": {
           "bg": {
-            "$value": "#eef8ff",
+            "$value": "rgba(31, 132, 223, 0.1)",
             "$type": "color",
             "$description": "--feedback-info-bg"
           },
           "text": {
-            "$value": "#0a467e",
+            "$value": "#8bc5ff",
             "$type": "color",
             "$description": "--feedback-info-text"
           },
           "border": {
-            "$value": "#baddff",
+            "$value": "rgba(31, 132, 223, 0.25)",
             "$type": "color",
             "$description": "--feedback-info-border"
           },
           "icon": {
-            "$value": "#0968bf",
+            "$value": "#52a6f5",
             "$type": "color",
             "$description": "--feedback-info-icon"
           }

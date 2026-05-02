@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const rootDir = process.cwd();
-const outDir = path.join(rootDir, "tokens", "figma");
+const outDir = path.join(rootDir, "figma", "tokens");
 
 const sourceFiles = [
   "tokens/colors.css",
@@ -107,14 +107,6 @@ function inferType(name, value) {
   }
 
   if (
-    name.startsWith("--space-") ||
-    name.startsWith("--radius-") ||
-    name.startsWith("--text-")
-  ) {
-    return "dimension";
-  }
-
-  if (
     name.startsWith("--color-") ||
     name.startsWith("--bg-") ||
     name.startsWith("--border-") ||
@@ -125,6 +117,14 @@ function inferType(name, value) {
     if (/^(#|rgba?\(|hsla?\()/i.test(value)) {
       return "color";
     }
+  }
+
+  if (
+    name.startsWith("--space-") ||
+    name.startsWith("--radius-") ||
+    name.startsWith("--text-")
+  ) {
+    return "dimension";
   }
 
   if (/^-?\d+(\.\d+)?$/.test(value)) {

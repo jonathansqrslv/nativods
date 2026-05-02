@@ -79,9 +79,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "#eef8ff",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "#eef8ff",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "#d9efff",
                 "$type": "color",
@@ -101,9 +103,11 @@
       "effect": {
         "shadow": {
           "focus": {
-            "$value": "0 0 0 3px color-mix(in srgb, #0968bf 35%, transparent)",
-            "$type": "string",
-            "$description": "--shadow-focus"
+            "default": {
+              "$value": "0 0 0 3px color-mix(in srgb, #0968bf 35%, transparent)",
+              "$type": "string",
+              "$description": "--shadow-focus"
+            }
           }
         }
       }
@@ -128,9 +132,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "rgba(59, 130, 246, 0.12)",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "rgba(59, 130, 246, 0.12)",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "rgba(59, 130, 246, 0.2)",
                 "$type": "color",
@@ -229,9 +235,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "#f0f6e9",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "#f0f6e9",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "#dfebce",
                 "$type": "color",
@@ -251,9 +259,11 @@
       "effect": {
         "shadow": {
           "focus": {
-            "$value": "0 0 0 3px color-mix(in srgb, #4f6819 35%, transparent)",
-            "$type": "string",
-            "$description": "--shadow-focus"
+            "default": {
+              "$value": "0 0 0 3px color-mix(in srgb, #4f6819 35%, transparent)",
+              "$type": "string",
+              "$description": "--shadow-focus"
+            }
           }
         }
       }
@@ -278,9 +288,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "rgba(89, 131, 80, 0.12)",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "rgba(89, 131, 80, 0.12)",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "rgba(89, 131, 80, 0.2)",
                 "$type": "color",
@@ -379,9 +391,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "#fffbe5",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "#fffbe5",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "#fff4b8",
                 "$type": "color",
@@ -401,9 +415,11 @@
       "effect": {
         "shadow": {
           "focus": {
-            "$value": "0 0 0 3px color-mix(in srgb, #805b00 35%, transparent)",
-            "$type": "string",
-            "$description": "--shadow-focus"
+            "default": {
+              "$value": "0 0 0 3px color-mix(in srgb, #805b00 35%, transparent)",
+              "$type": "string",
+              "$description": "--shadow-focus"
+            }
           }
         }
       }
@@ -428,9 +444,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "rgba(234, 179, 8, 0.12)",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "rgba(234, 179, 8, 0.12)",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "rgba(234, 179, 8, 0.2)",
                 "$type": "color",
@@ -529,9 +547,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "#fdf6ee",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "#fdf6ee",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "#faebda",
                 "$type": "color",
@@ -551,9 +571,11 @@
       "effect": {
         "shadow": {
           "focus": {
-            "$value": "0 0 0 3px color-mix(in srgb, #b85a1e 35%, transparent)",
-            "$type": "string",
-            "$description": "--shadow-focus"
+            "default": {
+              "$value": "0 0 0 3px color-mix(in srgb, #b85a1e 35%, transparent)",
+              "$type": "string",
+              "$description": "--shadow-focus"
+            }
           }
         }
       }
@@ -578,9 +600,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "rgba(212, 112, 48, 0.12)",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "rgba(212, 112, 48, 0.12)",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "rgba(212, 112, 48, 0.2)",
                 "$type": "color",
@@ -679,9 +703,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "#fff3ed",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "#fff3ed",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "#ffe1d2",
                 "$type": "color",
@@ -701,9 +727,11 @@
       "effect": {
         "shadow": {
           "focus": {
-            "$value": "0 0 0 3px color-mix(in srgb, #c83b10 35%, transparent)",
-            "$type": "string",
-            "$description": "--shadow-focus"
+            "default": {
+              "$value": "0 0 0 3px color-mix(in srgb, #c83b10 35%, transparent)",
+              "$type": "string",
+              "$description": "--shadow-focus"
+            }
           }
         }
       }
@@ -728,9 +756,11 @@
               "$description": "--interactive-active"
             },
             "subtle": {
-              "$value": "rgba(236, 79, 26, 0.12)",
-              "$type": "color",
-              "$description": "--interactive-subtle",
+              "default": {
+                "$value": "rgba(236, 79, 26, 0.12)",
+                "$type": "color",
+                "$description": "--interactive-subtle"
+              },
               "hover": {
                 "$value": "rgba(236, 79, 26, 0.2)",
                 "$type": "color",

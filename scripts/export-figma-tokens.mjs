@@ -183,6 +183,10 @@ function tokenPath(name, type) {
   }
 
   if (parts[0] === "shadow") {
+    if (parts[1] === "focus" && parts.length === 2) {
+      return ["effect", "shadow", "focus", "default"];
+    }
+
     return ["effect", "shadow", parts.slice(1).join("-")];
   }
 
@@ -191,6 +195,14 @@ function tokenPath(name, type) {
   }
 
   if (semanticPrefixes.includes(parts[0])) {
+    if (parts[0] === "bg" && parts[1] === "surface" && parts.length === 2) {
+      return ["color", "semantic", "bg", "surface", "default"];
+    }
+
+    if (parts[0] === "interactive" && parts[1] === "subtle" && parts.length === 2) {
+      return ["color", "semantic", "interactive", "subtle", "default"];
+    }
+
     return ["color", "semantic", parts[0], ...parts.slice(1)];
   }
 

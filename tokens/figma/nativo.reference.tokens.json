@@ -43,9 +43,11 @@
         "$description": "--shadow-inner"
       },
       "focus": {
-        "$value": "0 0 0 2px #28640f",
-        "$type": "string",
-        "$description": "--shadow-focus"
+        "default": {
+          "$value": "0 0 0 2px #28640f",
+          "$type": "string",
+          "$description": "--shadow-focus"
+        }
       },
       "focus-error": {
         "$value": "0 0 0 2px #c83b10",

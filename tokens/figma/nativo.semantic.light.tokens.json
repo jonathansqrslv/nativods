@@ -18,9 +18,11 @@
             "$type": "color",
             "$description": "--bg-surface-3"
           },
-          "$value": "#ffffff",
-          "$type": "color",
-          "$description": "--bg-surface"
+          "default": {
+            "$value": "#ffffff",
+            "$type": "color",
+            "$description": "--bg-surface"
+          }
         },
         "overlay": {
           "$value": "rgba(30, 25, 22, 0.5)",
@@ -62,9 +64,11 @@
           "$description": "--interactive-active"
         },
         "subtle": {
-          "$value": "#edf8e8",
-          "$type": "color",
-          "$description": "--interactive-subtle",
+          "default": {
+            "$value": "#edf8e8",
+            "$type": "color",
+            "$description": "--interactive-subtle"
+          },
           "hover": {
             "$value": "#d8efc9",
             "$type": "color",
